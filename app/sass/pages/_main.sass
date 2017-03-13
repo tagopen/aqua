@@ -1,0 +1,254 @@
++comment('general style')
++ic
++font('Jikharev', 'Jikharev')
+.text-danger
+  color: #e74c8c
+  text-align: left
++comment("home page style")
+.header
+  background: url(../img/bg1.jpg) no-repeat
+  background-size: cover
+  padding-bottom: 65px
+  &__col
+    text-align: center
+.contact
+  background-color: #362e2b
+  color: #fff
+  padding: 25px 20px
+  margin-bottom: 20px
+  &__text
+    font: 400 12px/21px $main-font
+  &__link  
+    color: #fff
+    font: 400 12px/21px $main-font
+    &:hover,
+    &:focus
+      color: #fff
+      text-decoration: none
+  &__icon
+    width: 20px
+    height: 20px
+    background: url(../img/icons/tel.png) no-repeat
+    background-size: cover  
+    margin: 0 auto  
+  &__phone
+    color: #fff
+    font: 400 14px/21px $main-font
+    &:hover,
+    &:focus
+      color: #fff
+      text-decoration: none  
+.logo
+  display: inline-block
+.heading
+  text-shadow: 1px 1.7px 5px rgba(0, 3, 2, 0.25)
+  color: #f8f8f8
+  font: 400 28px/45px $font-roboto
+  text-transform: uppercase
+  text-align: center 
+  margin: 0 0 20px
+.subheading
+  text-shadow: 1px 1.7px 5px rgba(0, 3, 2, 0.25)
+  color: #f9f9f9
+  font: 400 18px/27px $main-font
+  text-align: center
+  margin: 0
+  background-size: cover
+  background: url(../img/textbg.png) no-repeat
++r(768)
+  .header
+    padding-bottom: 215px
+  .contact
+    margin-bottom: 60px
+    &__phone  
+      font: 400 16px/21px $main-font
+  .heading
+    text-align: left
+    font: 400 36px/45px $font-roboto
+    padding-top: 10px
+    margin-bottom: 30px
+    padding-left: 10px
+  .subheading
+    text-align: left   
+    font: 400 20px/32px $main-font 
+    padding-left: 10px
+    background: url(../img/textbg768.png) no-repeat
++r(992)      
+  .header
+    padding-bottom: 230px
+  .heading
+    font: 400 43px/50px $font-roboto  
+  .subheading  
+    font: 400 28px/44px $main-font  
+    background: url(../img/textbg1200.png) no-repeat 
+    background-size: cover
++comment("intro style")  
+.intro
+  padding: 50px 0 75px  
+  &__text
+    color: #171717
+    font: 400 14px/21px $main-font
+    margin-bottom: 25px
+  &__subtext  
+    font: 400 italic 14px/21px $main-font
+  &__link
+    display: block 
+    position: relative
+    margin-bottom: 20px
+    &:hover
+      .intro__hover
+        visibility: visible
+        opacity: 1
+        transition: all 0.3s ease
+      .intro__img
+        filter: blur(5px)     
+  &__hover   
+    visibility: hidden
+    position: relative
+    z-index: 25
+    opacity: 0
+    transition: all 0.3s ease
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    text-align: center
+    padding: 15px
+    &-content
+      position: relative
+      z-index: 25
+      height: 100%
+      border: 2px solid #fff
+      color: #fff
+      font: 400 16px/130px $main-font
+  &__btn
+    border-radius: 0
+    border: 1px solid #362e2b
+    background: transparent 
+    font: 400 16px/18px $main-font
+    padding: 15px 20px
+    &:hover
+      background-color: #362e2b
+      color: #fff
++r(768)  
+  .intro
+    padding: 70px 0
+    &__text
+      font: 400 16px/24px $main-font
+      margin-bottom: 30px
+    &__subtext 
+      font: 400 italic 16px/24px $main-font 
+    &__link
+      margin-bottom: 30px  
++r(992)    
+  .intro
+    padding: 85px 0  
+    &__text
+      font: 400 20px/30px $main-font
+    &__subtext
+      font: 400 20px/30px 'Jikharev'
++comment("services style")  
+.item
+  text-align: center
+  margin-bottom: 20px  
+  color: #362e2b
+  padding: 25px 30px 20px
+  background-color: transparent
+  border: 2px solid #362e2b
+  transition: all 0.3s ease
+  &__heading
+    font: 400 24px/42px $font-roboto  
+    margin: 0 0 15px
+  &__text
+    font: 400 12px/15px $main-font  
+    margin-bottom: 25px
+  &:hover
+    color: #fff  
+    transition: all 0.3s ease
+    .item__btn
+      visibility: visible
+      opacity: 1
+    .item__icon
+      visibility: hidden
+      opacity: 0  
+  &--1
+    &:hover
+      background: url(../img/item1.png) no-repeat
+      background-size: cover
+  &--2
+    &:hover
+      background: url(../img/item2.png) no-repeat
+      background-size: cover
+  &--3
+    &:hover
+      background: url(../img/item3.png) no-repeat
+      background-size: cover
+  &--4 
+    &:hover
+      background: url(../img/item4.png) no-repeat
+      background-size: cover 
+  &__btn
+    border-radius: 0
+    background-color: transparent
+    border: 1px solid #fff  
+    font: 400 16px/18px $main-font
+    padding: 10px 20px
+    opacity: 0
+    visibility: hidden
+    &:hover
+      background-color: #fff
+      color: #000
+  &__icon
+    display: block
+    position: relative
+    top: -45px
+    margin: 0 auto
+    height: 70px
+    width: 70px
+    border: 2px solid #3b3b3b
+    border-radius: 50%
+    &--1
+      background: url(../img/icons/item1.svg) no-repeat 50% 50%
+    &--2
+      background: url(../img/icons/item2.svg) no-repeat 50% 50%
+    &--3
+      background: url(../img/icons/item3.svg) no-repeat 50% 50%
+    &--4 
+      background: url(../img/icons/item4.svg) no-repeat 50% 50%   
++r(992)      
+  .item
+    &__heading
+      font: 400 28px/42px $font-roboto 
+    &__text  
+      font: 400 15px/27px $main-font 
+      margin-bottom: 50px 
++comment("footer style") 
+.footer      
+  background-color: #362e2b 
+  color: #fff
+  padding: 25px 0
+  &__col
+    text-align: center
+    &--social
+      text-align: center
+  &__heading
+    font: 400 24px/42px $font-roboto  
+  &__subheading
+    font: 400 14px/42px $main-font 
+    margin-bottom: 40px
+  &__text  
+    font: 400 14px/42px $main-font 
++r(992)    
+  .footer
+    &__col
+      text-align: left
+      &--social
+        text-align: right
+    &__heading 
+      font: 400 28px/42px $font-roboto
+    &__subheading
+      font: 400 16px/42px $main-font
+    &__text
+      font: 400 16px/42px $main-font  
+      margin-bottom: 15px 

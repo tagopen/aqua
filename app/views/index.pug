@@ -1,0 +1,95 @@
+extends base/_layout.pug
+
+block styles
+
+block scripts
+
+block content
+    include components/_nav.pug
+    .intro
+      .container
+        .row
+          .col-xs-12.col-sm-9.col-md-5
+            p.intro__text Экопарк "Седьмое Небо" - уникальный клуб семейного отдыха закритого типа, который не имеет аналогов в Украине, клуб расположен в 20 километрах от Днепра, в уединённом и тихом месте, где природа гармонично взаимодействует с современной обстановкой. К вашим услугам оригинальные номера отеля, построенные из натуральных эко материалов, Банный комплекс с различным спектром услуг, ресторан украинской кухни с блюдами приготовленными в печи и многое другое.
+            p.intro__subtext Приезжайте к нам услышать тишину природы.
+          .col-xs-12.col-md-7  
+            .row
+              .col-xs-12.col-sm-6
+                a.intro__link(href='#')
+                  img.img-responsive.intro__img(src='img/intro1.jpg' alt="дом1")
+                  .intro__hover 
+                    .intro__hover-content Название 1
+              .col-xs-12.col-sm-6
+                a.intro__link(href='#')
+                  img.img-responsive.intro__img(src='img/intro2.jpg' alt="дом2")
+                  .intro__hover 
+                    .intro__hover-content Название 2
+              .col-xs-12.col-sm-6
+                a.intro__link(href='#')
+                  img.img-responsive.intro__img(src='img/intro3.jpg' alt="дом3")
+                  .intro__hover 
+                    .intro__hover-content Название 3
+              .col-xs-12.col-sm-6
+                a.intro__link(href='#')
+                  img.img-responsive.intro__img(src='img/intro4.jpg' alt="дом4")
+                  .intro__hover 
+                    .intro__hover-content Название 4 
+              .col-xs-12.col-sm-6.intro__col
+                a.intro__link(href='#')
+                  img.img-responsive.intro__img(src='img/intro4.jpg' alt="дом4")
+                  .intro__hover 
+                    .intro__hover-content Название 4 
+              .col-xs-12.col-sm-6.intro__col
+                a.intro__link(href='#')
+                  img.img-responsive.intro__img(src='img/intro4.jpg' alt="дом4")
+                  .intro__hover 
+                    .intro__hover-content Название 4 
+              .col-xs-12.col-sm-6.intro__col
+                a.intro__link(href='#')
+                  img.img-responsive.intro__img(src='img/intro4.jpg' alt="дом4")
+                  .intro__hover 
+                    .intro__hover-content Название 4 
+              .col-xs-12.col-sm-6.intro__col
+                a.intro__link(href='#')
+                  img.img-responsive.intro__img(src='img/intro4.jpg' alt="дом4")
+                  .intro__hover 
+                    .intro__hover-content Название 4                         
+              .col-xs-12.text-center
+                button.btn.intro__btn Показать все номера     
+    .services
+      .container
+        .row
+          .col-xs-12.col-sm-6
+            .item.item--1
+              h3.item__heading Ресторан
+              p.item__text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+              button.btn.item__btn Подробнее
+              span.item__icon.item__icon--1
+          .col-xs-12.col-sm-6
+            .item.item--2
+              h3.item__heading Ресторан
+              p.item__text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+              button.btn.item__btn Подробнее
+              span.item__icon.item__icon--2
+          .col-xs-12.col-sm-6
+            .item.item--3
+              h3.item__heading Ресторан
+              p.item__text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+              button.btn.item__btn Подробнее
+              span.item__icon.item__icon--3
+          .col-xs-12.col-sm-6
+            .item.item--4
+              h3.item__heading Ресторан
+              p.item__text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+              button.btn.item__btn Подробнее  
+              span.item__icon.item__icon--4
+                     
+    block footer
+      .container
+        .row
+          .col-xs-12.col-sm-4.footer__col
+            h2.footer__heading Эко парк «7 небо»
+            .footer__subheading п. Кировское, ул. Тихая 106
+          .col-xs-12.col-sm-4.col-md-3.pull-right.footer__col--social
+            p.footer__text Мы в социальных сетях:  
+            .footer__social        
