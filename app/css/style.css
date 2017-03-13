@@ -123,6 +123,10 @@
   text-align: left;
 }
 
+a {
+  outline: none;
+}
+
 /* ---------------------------------------- */
 /* H O M E    P A G E    S T Y L E          */
 /* ---------------------------------------- */
@@ -133,6 +137,15 @@
 }
 .header__col {
   text-align: center;
+}
+.header__scroll {
+  display: inline-block;
+  height: 105px;
+  width: 18px;
+  background: url(../img/icons/scroll.png) no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  margin-left: 35px;
 }
 
 .contact {
@@ -191,9 +204,9 @@
   background: url(../img/textbg.png) no-repeat;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   .header {
-    padding-bottom: 215px;
+    padding-bottom: 0;
   }
 
   .contact {
@@ -215,14 +228,11 @@
     text-align: left;
     font: 400 20px/32px "Open Sans", sans-serif;
     padding-left: 10px;
-    background: url(../img/textbg768.png) no-repeat;
+    background: url(../img/textbg760.png) no-repeat;
+    margin-bottom: 100px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .header {
-    padding-bottom: 230px;
-  }
-
   .heading {
     font: 400 43px/50px "Roboto Slab", serif;
   }
@@ -298,7 +308,7 @@
   color: #fff;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   .intro {
     padding: 70px 0;
   }
@@ -422,6 +432,29 @@
   }
 }
 /* ---------------------------------------- */
+/* M A P    S T Y L E                       */
+/* ---------------------------------------- */
+.map {
+  height: 400px;
+}
+.map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+/* ---------------------------------------- */
+/* P A N O R A M A    S T Y L E             */
+/* ---------------------------------------- */
+.panorama {
+  display: block;
+  width: 100%;
+  background: url(../img/panorama.png) no-repeat 0 50%;
+  background-size: cover;
+  height: 440px;
+  margin-top: -50px;
+}
+
+/* ---------------------------------------- */
 /* F O O T E R    S T Y L E                 */
 /* ---------------------------------------- */
 .footer {
@@ -488,7 +521,7 @@
 /* ---------------------------------------- */
 .modal__size {
   width: 300px;
-  margin-top: 40px;
+  margin: 40px auto 0;
 }
 .modal__content {
   position: relative;
@@ -534,13 +567,14 @@
   border: 1px solid #362e2b;
   padding: 15px;
   margin-top: 10px;
+  color: #362e2b;
 }
 .modal__btn:hover {
   color: #fff;
   background-color: #362e2b;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   .modal__size {
     width: 350px;
   }

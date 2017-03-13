@@ -101,3 +101,10 @@ $(document).ready( function () {
     $('.intro__btn').hide();
   }));
 });
+
+$(document).ready( function() {
+  $('.header__scroll').click(function(){
+    $("html, body").animate({ scrollTop: $(".intro").offset().top }, 1000);
+    return false;
+  });
+});

@@ -33,25 +33,25 @@ block content
                 a.intro__link(href='#')
                   img.img-responsive.intro__img(src='img/intro4.jpg' alt="дом4")
                   .intro__hover 
-                    .intro__hover-content Название 4 
+                    .intro__hover-content Название 5 
               .col-xs-12.col-sm-6.intro__col
                 a.intro__link(href='#')
-                  img.img-responsive.intro__img(src='img/intro4.jpg' alt="дом4")
+                  img.img-responsive.intro__img(src='img/intro5.jpg' alt="дом5")
                   .intro__hover 
-                    .intro__hover-content Название 4 
+                    .intro__hover-content Название 6
               .col-xs-12.col-sm-6.intro__col
                 a.intro__link(href='#')
-                  img.img-responsive.intro__img(src='img/intro4.jpg' alt="дом4")
+                  img.img-responsive.intro__img(src='img/intro6.jpg' alt="дом6")
                   .intro__hover 
-                    .intro__hover-content Название 4 
+                    .intro__hover-content Название 7
               .col-xs-12.col-sm-6.intro__col
                 a.intro__link(href='#')
-                  img.img-responsive.intro__img(src='img/intro4.jpg' alt="дом4")
+                  img.img-responsive.intro__img(src='img/intro7.jpg' alt="дом7")
                   .intro__hover 
-                    .intro__hover-content Название 4 
+                    .intro__hover-content Название 8 
               .col-xs-12.col-sm-6.intro__col
                 a.intro__link(href='#')
-                  img.img-responsive.intro__img(src='img/intro4.jpg' alt="дом4")
+                  img.img-responsive.intro__img(src='img/intro8.jpg' alt="дом8")
                   .intro__hover 
                     .intro__hover-content Название 4                         
               .col-xs-12.text-center
@@ -83,7 +83,10 @@ block content
               p.item__text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
               button.btn.item__btn Подробнее  
               span.item__icon.item__icon--4
-                     
+
+    .map
+      iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21124.585485829735!2d34.8531957986963!3d48.5605697094873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbdff2aa44c617%3A0xb05ec7cbe91d9dd7!2z0LLRg9C70LjRhtGPINCi0LjRhdCwLCAxMCwg0JrRltGA0L7QstGB0YzQutC1LCDQlNC90ZbQv9GA0L7Qv9C10YLRgNC-0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNTIwMzA!5e0!3m2!1sru!2sua!4v1489407440744" frameborder="0" style="border:0" allowfullscreen)          
+    .panorama               
 block footer
   .container
     .row
@@ -106,10 +109,10 @@ block footer
             .modal__heading Оставьте ваши контакты, и мы свяжемся с вами
           form.contactForm.modal__form(name='Шапка', method='post', action='mail/mail.php')
             .form-group
-              input.form-control.modal__input.form__name(aria-invalid='false', placeholder='Ваше имя', required='', data-validation-required-message='Please enter your name.', name='name', type='text')
+              input.form-control.modal__input.form__name(aria-invalid='false', placeholder='Ваше имя', required, data-validation-required-message='Please enter your name.', name='name', type='text')
             .form-group
-              input.form-control.modal__input.form__phone(aria-invalid='false', placeholder='Ваш телефон', required='', data-validation-required-message='Please enter your phone number.', name='phone', type='tel')
+              input.form-control.modal__input.form__phone(aria-invalid='false', placeholder='Ваш телефон', required, data-validation-required-message='Please enter your phone number.', name='phone', type='tel')
             .form-group
-              input.form-control.modal__input.form__mail(aria-invalid='false', placeholder='Ваш e-mail', required='', data-validation-required-message='Please enter your phone number.', name='email', type='email')
+              input.form-control.modal__input.form__mail(aria-invalid='false', placeholder='Ваш e-mail', required, data-validation-required-message='Please enter your phone number.', name='email', type='email')
             .text-center
               button.btn.modal__btn(type='submit', data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Файл отправляется...") Заказать звонок
