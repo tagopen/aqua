@@ -84,12 +84,32 @@ block content
               button.btn.item__btn Подробнее  
               span.item__icon.item__icon--4
                      
-    block footer
-      .container
-        .row
-          .col-xs-12.col-sm-4.footer__col
-            h2.footer__heading Эко парк «7 небо»
-            .footer__subheading п. Кировское, ул. Тихая 106
-          .col-xs-12.col-sm-4.col-md-3.pull-right.footer__col--social
-            p.footer__text Мы в социальных сетях:  
-            .footer__social        
+block footer
+  .container
+    .row
+      .col-xs-12.col-sm-4.footer__col
+        h2.footer__heading Эко парк «7 небо»
+        .footer__subheading п. Кировское, ул. Тихая 106
+      .col-xs-12.col-sm-4.col-md-3.pull-right.footer__col--social
+        p.footer__text Мы в социальных сетях:  
+        .footer__social.social
+          a.social__link.social__link--inst(href="#")
+          a.social__link.social__link--fb(href="#") 
+          a.social__link.social__link--youtube(href="#")  
+
+    #header__modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-dialog.modal__size
+        .modal-content.modal__content
+          button.close.modal__close(type='button', data-dismiss='modal', aria-hidden='true')
+            i.fa.fa-times(aria-hidden='true')
+          .modal__head
+            .modal__heading Оставьте ваши контакты, и мы свяжемся с вами
+          form.contactForm.modal__form(name='Шапка', method='post', action='mail/mail.php')
+            .form-group
+              input.form-control.modal__input.form__name(aria-invalid='false', placeholder='Ваше имя', required='', data-validation-required-message='Please enter your name.', name='name', type='text')
+            .form-group
+              input.form-control.modal__input.form__phone(aria-invalid='false', placeholder='Ваш телефон', required='', data-validation-required-message='Please enter your phone number.', name='phone', type='tel')
+            .form-group
+              input.form-control.modal__input.form__mail(aria-invalid='false', placeholder='Ваш e-mail', required='', data-validation-required-message='Please enter your phone number.', name='email', type='email')
+            .text-center
+              button.btn.modal__btn(type='submit', data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Файл отправляется...") Заказать звонок

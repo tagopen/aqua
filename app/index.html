@@ -68,7 +68,7 @@
                   <div class="col-xs-7"><a class="contact__phone" href="tel:+380507965289">+38 (050) 796-52-89</a>
                     <div class="contact__text">п. Кировское, ул. Тихая 106</div>
                   </div>
-                  <div class="col-xs-5 text-center"><a class="contact__link" href="#"> 
+                  <div class="col-xs-5 text-center"><a class="contact__link" href="#header__modal" data-toggle="modal">
                       <div class="contact__icon"></div>Заказать звонок</a></div>
                 </div>
               </div>
@@ -170,18 +170,6 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-4 footer__col">
-            <h2 class="footer__heading">Эко парк «7 небо»</h2>
-            <div class="footer__subheading">п. Кировское, ул. Тихая 106</div>
-          </div>
-          <div class="col-xs-12 col-sm-4 col-md-3 pull-right footer__col--social">
-            <p class="footer__text">Мы в социальных сетях:  </p>
-            <div class="footer__social">       </div>
-          </div>
-        </div>
-      </div>
     </div>
     <footer class="footer">
       <div class="container">
@@ -192,7 +180,31 @@
           </div>
           <div class="col-xs-12 col-sm-4 col-md-3 pull-right footer__col--social">
             <p class="footer__text">Мы в социальных сетях:  </p>
-            <div class="footer__social">       </div>
+            <div class="footer__social social"><a class="social__link social__link--inst" href="#"></a><a class="social__link social__link--fb" href="#"> </a><a class="social__link social__link--youtube" href="#"> </a></div>
+          </div>
+        </div>
+        <div class="modal fade" id="header__modal" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal__size">
+            <div class="modal-content modal__content">
+              <button class="close modal__close" type="button" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>
+              <div class="modal__head">
+                <div class="modal__heading">Оставьте ваши контакты, и мы свяжемся с вами</div>
+              </div>
+              <form class="contactForm modal__form" name="Шапка" method="post" action="mail/mail.php">
+                <div class="form-group">
+                  <input class="form-control modal__input form__name" aria-invalid="false" placeholder="Ваше имя" required="" data-validation-required-message="Please enter your name." name="name" type="text">
+                </div>
+                <div class="form-group">
+                  <input class="form-control modal__input form__phone" aria-invalid="false" placeholder="Ваш телефон" required="" data-validation-required-message="Please enter your phone number." name="phone" type="tel">
+                </div>
+                <div class="form-group">
+                  <input class="form-control modal__input form__mail" aria-invalid="false" placeholder="Ваш e-mail" required="" data-validation-required-message="Please enter your phone number." name="email" type="email">
+                </div>
+                <div class="text-center">
+                  <button class="btn modal__btn" type="submit" data-loading-text="&lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt; Файл отправляется...">Заказать звонок</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>

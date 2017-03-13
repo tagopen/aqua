@@ -3,7 +3,7 @@
 +font('Jikharev', 'Jikharev')
 .text-danger
   color: #e74c8c
-  text-align: left
+  text-align: left  
 +comment("home page style")
 .header
   background: url(../img/bg1.jpg) no-repeat
@@ -239,6 +239,21 @@
     margin-bottom: 40px
   &__text  
     font: 400 14px/42px $main-font 
+.social
+  &__link
+    display: inline-block
+    height: 30px
+    width: 30px
+    margin-right: 10px
+    &--inst
+      background: url(../img/icons/instagram.png) no-repeat
+      background-size: cover
+    &--fb
+      background: url(../img/icons/facebook.png) no-repeat
+      background-size: cover
+    &--youtube
+      background: url(../img/icons/youtube.png) no-repeat
+      background-size: cover    
 +r(992)    
   .footer
     &__col
@@ -252,3 +267,47 @@
     &__text
       font: 400 16px/42px $main-font  
       margin-bottom: 15px 
++comment("modal style")    
+.modal
+  &__size
+    width: 300px
+    margin-top: 40px
+  &__content
+    position: relative
+    border-radius: 0 
+    padding: 25px 
+  &__close
+    position: absolute
+    right: 10px
+    top: 10px
+    opacity: 1  
+  &__heading
+    color: #362e2b  
+    font: 400 18px/27px $main-font 
+    margin-bottom: 30px
+    text-align: center
+  &__input
+    border-radius: 0
+    border: 0
+    border-bottom: 1px solid #362e2b    
+    box-shadow: none
+    text-align: center
+    margin-bottom: 20px
+    color: #362e2b
+    +placeholder-color(#362e2b)
+  &__btn
+    border-radius: 0
+    width: 100%  
+    background-color: transparent
+    border: 1px solid #362e2b  
+    padding: 15px
+    margin-top: 10px
+    &:hover
+      color: #fff
+      background-color: #362e2b
++r(768)    
+  .modal
+    &__size
+      width: 350px
+    &__content
+      padding: 40px 50px 50px  

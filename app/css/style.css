@@ -446,6 +446,25 @@
   font: 400 14px/42px "Open Sans", sans-serif;
 }
 
+.social__link {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.social__link--inst {
+  background: url(../img/icons/instagram.png) no-repeat;
+  background-size: cover;
+}
+.social__link--fb {
+  background: url(../img/icons/facebook.png) no-repeat;
+  background-size: cover;
+}
+.social__link--youtube {
+  background: url(../img/icons/youtube.png) no-repeat;
+  background-size: cover;
+}
+
 @media only screen and (min-width: 992px) {
   .footer__col {
     text-align: left;
@@ -462,5 +481,70 @@
   .footer__text {
     font: 400 16px/42px "Open Sans", sans-serif;
     margin-bottom: 15px;
+  }
+}
+/* ---------------------------------------- */
+/* M O D A L    S T Y L E                   */
+/* ---------------------------------------- */
+.modal__size {
+  width: 300px;
+  margin-top: 40px;
+}
+.modal__content {
+  position: relative;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  padding: 25px;
+}
+.modal__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  opacity: 1;
+}
+.modal__heading {
+  color: #362e2b;
+  font: 400 18px/27px "Open Sans", sans-serif;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.modal__input {
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #362e2b;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #362e2b;
+}
+.modal__input:-moz-placeholder, .modal__input::-moz-placeholder {
+  color: #362e2b;
+  opacity: 1;
+}
+.modal__input::-webkit-input-placeholder {
+  color: #362e2b;
+}
+.modal__btn {
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #362e2b;
+  padding: 15px;
+  margin-top: 10px;
+}
+.modal__btn:hover {
+  color: #fff;
+  background-color: #362e2b;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal__size {
+    width: 350px;
+  }
+  .modal__content {
+    padding: 40px 50px 50px;
   }
 }
