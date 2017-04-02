@@ -14,13 +14,8 @@ $(function() {
             var email = $form.find("[name=email]").val();
             var phone = $form.find("[name=phone]").val();
             var message = $form.find("[name=message]").val();
-            var firstName = name; // For Success/Failure Message
-            // Check for white space in name for Success/Fail message
-            if (firstName.indexOf(' ') >= 0) {
-                firstName = name.split(' ').slice(0, -1).join(' ');
-            }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "././mail/mail.php",
                 type: "POST",
                 data: {
                     form: form,
@@ -51,7 +46,7 @@ $(function() {
                     $('.success').html("<div class='alert alert-danger'>");
                     $('.success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('.success > .alert-danger').append("<strong>Приносим свои извинения, " + firstName + ", но наш почтовый сервер времено не работает. Попробуйте, отправить сообщение еще раз и сообщите нам о проблеме!");
+                    $('.success > .alert-danger').append("<strong>Приносим свои извинения, но наш почтовый сервер времено не работает. Попробуйте, отправить сообщение еще раз и сообщите нам о проблеме!");
                     $('.success > .alert-danger').append('</div>');
 
                     // remove prevent submit behaviour and disable preloading

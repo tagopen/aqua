@@ -51,3 +51,30 @@
   });
 
 })(jQuery); // End of use strict
+
+// Equal Height function
+function setEqualHeight(columns)
+{
+  var tallestcolumn = 0;
+  columns.each(
+    function()
+    {
+      currentHeight = $(this).height();
+      if(currentHeight > tallestcolumn)
+      {
+        tallestcolumn = currentHeight;
+      }
+    }
+    );
+  columns.height(tallestcolumn);
+}
+
+// Equial Height
+$(window).on('resize', function(){
+  // Only 768px +
+  if( $( window ).width() >= 760 ) {
+    // section problem
+    setEqualHeight($('.item'));
+    setEqualHeight($('.item__text'));
+  }
+}).trigger('resize');

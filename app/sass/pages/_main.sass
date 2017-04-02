@@ -65,6 +65,7 @@ a
   margin: 0
   background-size: cover
   background: url(../img/textbg.png) no-repeat
+  background-position: center
 +r(760)
   .header
     padding-bottom: 0
@@ -81,14 +82,14 @@ a
   .subheading
     text-align: left   
     font: 400 20px/32px $main-font 
-    padding-left: 10px
-    background: url(../img/textbg760.png) no-repeat
+    padding-left: 20px
+    background: url(../img/textbg768.png) no-repeat
     margin-bottom: 100px
 +r(992)      
   .heading
     font: 400 43px/50px $font-roboto  
   .subheading  
-    font: 400 28px/44px $main-font  
+    font: 400 28px/50px $main-font  
     background: url(../img/textbg1200.png) no-repeat 
     background-size: cover
 +comment("intro style")  
@@ -101,10 +102,12 @@ a
   &__subtext  
     font: 400 italic 14px/21px $main-font
   &__link
-    display: block 
+    display: inline-block
     position: relative
     margin-bottom: 20px
-    &:hover
+    cursor: pointer
+    &:hover,
+    &:focus
       .intro__hover
         visibility: visible
         opacity: 1
@@ -140,6 +143,10 @@ a
     &:hover
       background-color: #362e2b
       color: #fff
++r(600)
+  .intro
+    &__link
+      max-width: 450px       
 +r(760)  
   .intro
     padding: 70px 0
@@ -156,7 +163,9 @@ a
     &__text
       font: 400 20px/30px $main-font
     &__subtext
-      font: 400 20px/30px 'Jikharev'
+      font: 400 26px/30px 'Jikharev'
+    &__link
+      max-width: none  
 +comment("services style")  
 .item
   text-align: center
@@ -234,18 +243,31 @@ a
       margin-bottom: 50px 
 +comment("map style")   
 .map
+  position: relative
   height: 400px
+  &:before
+    display: block
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    height: 102px
+    width: 100%
+    background: url(../img/top.png) no-repeat
+    background-size: cover
   iframe
     height: 100%
     width: 100% 
 +comment("panorama style") 
 .panorama
+  position: relative
   display: block
   width: 100%
   background: url(../img/panorama.png) no-repeat 0 50%
   background-size: cover
+  background-position: center
   height: 440px   
-  margin-top: -50px
+  margin-top: -60px
 +comment("footer style") 
 .footer      
   background-color: #362e2b 

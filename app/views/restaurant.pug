@@ -1,0 +1,118 @@
+extends base/_layout.pug
+
+block styles
+
+block scripts
+
+block content
+    include components/_nav.pug
+    .intro
+      .container
+        .row
+          .col-xs-12.col-sm-9.col-md-5
+            p.intro__text Экопарк "Седьмое Небо" - уникальный клуб семейного отдыха закритого типа, который не имеет аналогов в Украине, клуб расположен в 20 километрах от Днепра, в уединённом и тихом месте, где природа гармонично взаимодействует с современной обстановкой. К вашим услугам оригинальные номера отеля, построенные из натуральных эко материалов, Банный комплекс с различным спектром услуг, ресторан украинской кухни с блюдами приготовленными в печи и многое другое.
+            p.intro__subtext Приезжайте к нам услышать тишину природы.
+          .col-xs-12.col-md-7  
+            .row
+              .col-xs-12.col-sm-6.text-center
+                a.intro__link
+                  img.img-responsive.intro__img(src='img/intro1.jpg' alt="дом1")
+                  .intro__hover 
+                    .intro__hover-content Дом Яйцо
+              .col-xs-12.col-sm-6.text-center
+                a.intro__link
+                  img.img-responsive.intro__img(src='img/intro2.jpg' alt="дом2")
+                  .intro__hover 
+                    .intro__hover-content Свадебный
+              .col-xs-12.col-sm-6.text-center
+                a.intro__link
+                  img.img-responsive.intro__img(src='img/intro3.jpg' alt="дом3")
+                  .intro__hover 
+                    .intro__hover-content Лесной
+              .col-xs-12.col-sm-6.text-center
+                a.intro__link
+                  img.img-responsive.intro__img(src='img/intro4.jpg' alt="дом4")
+                  .intro__hover 
+                    .intro__hover-content Круглый дом
+              .col-xs-12.col-sm-6.text-center.intro__col
+                a.intro__link
+                  img.img-responsive.intro__img(src='img/intro5.jpg' alt="дом5")
+                  .intro__hover 
+                    .intro__hover-content Номер терраса
+              .col-xs-12.col-sm-6.text-center.intro__col
+                a.intro__link
+                  img.img-responsive.intro__img(src='img/intro6.jpg' alt="дом6")
+                  .intro__hover 
+                    .intro__hover-content Сельский
+              .col-xs-12.col-sm-6.text-center.intro__col
+                a.intro__link
+                  img.img-responsive.intro__img(src='img/intro7.jpg' alt="дом7")
+                  .intro__hover 
+                    .intro__hover-content Деревянный дом
+              .col-xs-12.col-sm-6.text-center.intro__col
+                a.intro__link
+                  img.img-responsive.intro__img(src='img/intro8.jpg' alt="дом8")
+                  .intro__hover 
+                    .intro__hover-content Похотливый                         
+              .col-xs-12.text-center
+                button.btn.intro__btn Показать все номера     
+    .services
+      .container
+        .row
+          .col-xs-12.col-sm-6
+            .item.item--1
+              h3.item__heading Ресторан
+              p.item__text РЕСТОРАН Экопарка "Седьмое Небо" — это европейская кухня, которая базируется на аутентичных эко-технологиях с применением только натуральных, органических продуктов из собственных ферм и огородов.
+              button.btn.item__btn Подробнее
+              span.item__icon.item__icon--1
+          .col-xs-12.col-sm-6
+            .item.item--2
+              h3.item__heading Банный комплекс
+              p.item__text Банный-комплекс в Экопарк "Седьмое Небо" включает русскую баню, инфракрасную сауну и уникальные карпатские чаны. 
+              button.btn.item__btn Подробнее
+              span.item__icon.item__icon--2
+          .col-xs-12.col-sm-6
+            .item.item--3
+              h3.item__heading Развлечения
+              p.item__text К вашим услугам Крытый и открытый бассейн, кинотеатр, бильярдный зал, волейбольная площадка, детская площадка и многое другое.
+              button.btn.item__btn Подробнее
+              span.item__icon.item__icon--3
+          .col-xs-12.col-sm-6
+            .item.item--4
+              h3.item__heading Мероприятия
+              p.item__text В этом разделе вы можете ознакомиться с мероприятиями которые пройдут у нас в ближайшее время.
+              button.btn.item__btn Подробнее  
+              span.item__icon.item__icon--4
+
+    .map
+      iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21124.585485829735!2d34.8531957986963!3d48.5605697094873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbdff2aa44c617%3A0xb05ec7cbe91d9dd7!2z0LLRg9C70LjRhtGPINCi0LjRhdCwLCAxMCwg0JrRltGA0L7QstGB0YzQutC1LCDQlNC90ZbQv9GA0L7Qv9C10YLRgNC-0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNTIwMzA!5e0!3m2!1sru!2sua!4v1489407440744" frameborder="0" style="border:0" allowfullscreen)          
+    .panorama               
+block footer
+  .container
+    .row
+      .col-xs-12.col-sm-4.footer__col
+        h2.footer__heading Эко парк «7 небо»
+        .footer__subheading п. Кировское, ул. Тихая 106
+      .col-xs-12.col-sm-4.col-md-3.pull-right.footer__col--social
+        p.footer__text Мы в социальных сетях:  
+        .footer__social.social
+          a.social__link.social__link--inst(href="#")
+          a.social__link.social__link--fb(href="#") 
+          a.social__link.social__link--youtube(href="#")  
+
+    #header__modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-dialog.modal__size
+        .modal-content.modal__content
+          button.close.modal__close(type='button', data-dismiss='modal', aria-hidden='true')
+            i.fa.fa-times(aria-hidden='true')
+          .modal__head
+            .modal__heading Оставьте ваши контакты, и мы свяжемся с вами
+          form.contactForm.modal__form(name='Шапка', method='post', action='mail/mail.php')
+            .form-group
+              input.form-control.modal__input.form__name(aria-invalid='false', placeholder='Ваше имя', required, data-validation-required-message='Please enter your name.', name='name', type='text')
+            .form-group
+              input.form-control.modal__input.form__phone(aria-invalid='false', placeholder='Ваш телефон', required, data-validation-required-message='Please enter your phone number.', name='phone', type='tel')
+            .form-group
+              input.form-control.modal__input.form__mail(aria-invalid='false', placeholder='Ваш e-mail', required, data-validation-required-message='Please enter your phone number.', name='email', type='email')
+            .text-center
+              button.btn.modal__btn(type='submit', data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Файл отправляется...") Заказать звонок
