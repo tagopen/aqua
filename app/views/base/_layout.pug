@@ -1,4 +1,5 @@
 include ../utils/_variables.pug
+block variables
 doctype html
 html(lang='ru' prefix='og: http://ogp.me/ns#')
   head
@@ -74,8 +75,8 @@ html(lang='ru' prefix='og: http://ogp.me/ns#')
   body.body
     div.wrapper
       block content
-    footer.footer
-      block footer
+    block footer
+    block modals
 
     // build:js js/bundle.min.js
 
