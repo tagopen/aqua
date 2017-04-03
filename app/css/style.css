@@ -166,14 +166,17 @@ a {
   margin: 0 0 20px; }
 
 .subheading {
-  text-shadow: 1px 1.7px 5px rgba(0, 3, 2, 0.25);
+  margin: 0 0 25px;
   color: #f9f9f9;
-  font: 400 18px/27px "Open Sans", sans-serif;
   text-align: center;
-  margin: 0;
-  background-size: cover;
-  background: url(../img/textbg.png) no-repeat;
-  background-position: center; }
+  text-shadow: 1px 1.7px 5px rgba(0, 3, 2, 0.25);
+  font: 400 18px/27px "Open Sans", sans-serif; }
+  .subheading--main {
+    font: 400 18px/27px "Open Sans", sans-serif;
+    background-size: cover;
+    background: url(../img/textbg.png) no-repeat;
+    background-position: center;
+    margin: 0; }
 
 @media only screen and (min-width: 760px) {
   .header {
@@ -190,18 +193,22 @@ a {
     padding-left: 10px; }
   .subheading {
     text-align: left;
-    font: 400 20px/32px "Open Sans", sans-serif;
-    padding-left: 20px;
-    background: url(../img/textbg768.png) no-repeat;
-    margin-bottom: 100px; } }
+    font: 400 18px/27px "Open Sans", sans-serif; }
+    .subheading--main {
+      font: 400 20px/32px "Open Sans", sans-serif;
+      margin-bottom: 100px;
+      padding-left: 20px;
+      background: url(../img/textbg768.png) no-repeat; } }
 
 @media only screen and (min-width: 992px) {
   .heading {
     font: 400 43px/50px "Roboto Slab", serif; }
   .subheading {
-    font: 400 28px/50px "Open Sans", sans-serif;
-    background: url(../img/textbg1200.png) no-repeat;
-    background-size: cover; } }
+    font: 400 20px/30px "Open Sans", sans-serif; }
+    .subheading--main {
+      font: 400 28px/50px "Open Sans", sans-serif;
+      background: url(../img/textbg1200.png) no-repeat;
+      background-size: cover; } }
 
 /* ---------------------------------------- */
 /* I N T R O    S T Y L E                   */
@@ -501,3 +508,53 @@ a {
     width: 350px; }
   .modal__content {
     padding: 40px 50px 50px; } }
+
+/* ---------------------------------------- */
+/* I N S I D E    P A G E S    S T Y L E    */
+/* ---------------------------------------- */
+.header--restaurant {
+  background: url(../img/restaurant-header-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 0; }
+
+.advantage {
+  margin-bottom: 25px; }
+  .advantage__icon {
+    margin-right: 30px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #fff;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    line-height: 44px; }
+  .advantage__name {
+    font: 400 14px/18px "Open Sans", sans-serif;
+    text-shadow: 1px 1.7px 5px rgba(0, 3, 2, 0.25);
+    color: #fff; }
+
+.ic--dinner:before {
+  background: url(../img/icons/ic--dinner.svg);
+  height: 30px;
+  width: 30px; }
+
+.ic--fire:before {
+  background: url(../img/icons/ic--fire.svg);
+  height: 30px;
+  width: 17px; }
+
+.ic--wine:before {
+  background: url(../img/icons/ic--wine.svg);
+  height: 30px;
+  width: 10px; }
+
+.ic--cake:before {
+  background: url(../img/icons/ic--cake.svg);
+  height: 30px;
+  width: 37px; }
+
+@media only screen and (min-width: 768px) {
+  .advantage__icon {
+    height: 64px;
+    width: 64px;
+    line-height: 60px; } }
