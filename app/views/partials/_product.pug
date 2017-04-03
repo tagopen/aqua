@@ -17,8 +17,7 @@ section.content
   .container-fluid
     each item, i in page.content
       .row
-        .product
-          i.ic.product__icon(class= item.icon)
+        .clearfix.product
           case i + 1
             when 1
               .col-xs-12.col-sm-8.col-sm-offset-4.col-md-7.col-md-offset-5
@@ -44,3 +43,4 @@ section.content
               else 
                 .col-xs-12.col-sm-6.col-sm-offset-6.col-md-7.col-md-offset-5
                   +content(item)
+          i.ic.product__icon(class= item.icon)

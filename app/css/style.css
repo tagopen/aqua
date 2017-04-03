@@ -512,6 +512,9 @@ a {
 /* ---------------------------------------- */
 /* I N S I D E    P A G E S    S T Y L E    */
 /* ---------------------------------------- */
+/* ---------------------------------------- */
+/* R E S T U R A N T    S T Y L E           */
+/* ---------------------------------------- */
 .header--restaurant {
   background: url(../img/restaurant-header-bg.jpg) no-repeat;
   background-size: cover;
@@ -553,13 +556,69 @@ a {
   height: 30px;
   width: 37px; }
 
+.ic--restaurant1 {
+  display: block;
+  background: url(../img/restaurant1.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--restaurant2 {
+  display: block;
+  background: url(../img/restaurant2.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--restaurant3 {
+  display: block;
+  background: url(../img/restaurant3.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--restaurant4 {
+  display: block;
+  background: url(../img/restaurant4.jpg) no-repeat;
+  background-size: cover; }
+
+.product {
+  position: relative; }
+  .product__icon {
+    height: 300px; }
+    .product__icon:before {
+      clear: both; }
+  .product__content {
+    position: relative;
+    z-index: 25; }
+
 @media only screen and (min-width: 768px) {
   .header__icons {
     margin: 25px 0; }
   .advantage__icon {
     height: 64px;
     width: 64px;
-    line-height: 60px; } }
+    line-height: 60px; }
+  .product__content {
+    padding: 100px 0; }
+  .ic--restaurant1 {
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    left: 0;
+    top: 0; }
+  .ic--restaurant2 {
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    right: 0;
+    top: 0; }
+  .ic--restaurant3 {
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    left: 0;
+    top: 0; }
+  .ic--restaurant4 {
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    left: 0;
+    top: 0; } }
 
 @media only screen and (min-width: 992px) {
   .header__icons {

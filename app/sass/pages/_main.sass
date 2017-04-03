@@ -364,7 +364,8 @@ a
       width: 350px
     &__content
       padding: 40px 50px 50px  
-+comment("inside pages style")  
++comment("inside pages style") 
++comment("resturant style") 
 .header
   &--restaurant
     background: url(../img/restaurant-header-bg.jpg) no-repeat
@@ -404,7 +405,32 @@ a
     &:before
       background: url(../img/icons/ic--cake.svg)
       height: 30px
-      width: 37px  
+      width: 37px
+  &--restaurant1
+    display: block
+    background: url(../img/restaurant1.jpg) no-repeat
+    background-size: cover 
+  &--restaurant2 
+    display: block
+    background: url(../img/restaurant2.jpg) no-repeat
+    background-size: cover
+  &--restaurant3
+    display: block
+    background: url(../img/restaurant3.jpg) no-repeat
+    background-size: cover
+  &--restaurant4
+    display: block
+    background: url(../img/restaurant4.jpg) no-repeat
+    background-size: cover          
+.product
+  position: relative   
+  &__icon
+    height: 300px
+    &:before
+      clear: both
+  &__content
+    position: relative
+    z-index: 25
 +r(768)
   .header
     &__icons
@@ -414,6 +440,34 @@ a
       height: 64px
       width: 64px 
       line-height: 60px 
+  .product
+    &__content
+      padding: 100px 0    
+  .ic
+    &--restaurant1
+      position: absolute
+      height: 100%
+      width: 60%
+      left: 0
+      top: 0
+    &--restaurant2
+      position: absolute
+      height: 100%
+      width: 60% 
+      right: 0
+      top: 0
+    &--restaurant3
+      position: absolute
+      height: 100%
+      width: 60% 
+      left: 0
+      top: 0
+    &--restaurant4
+      position: absolute
+      height: 100%
+      width: 60%   
+      left: 0
+      top: 0  
 +r(992) 
   .header
     &__icons
