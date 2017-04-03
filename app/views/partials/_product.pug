@@ -7,12 +7,18 @@ mixin content(item)
       if (item.subheading)
         .product__subheading!= item.subheading
       each text in item.text
-        p.product__text!= text
-
-section.restaurant
+        if (text.title)
+          b.product__title!= text.title
+        else if (text.phone)
+          a.product__phone(href= text.phone.link)!= text.phone.name
+        else if (text.street)
+          p.product__text.product__text--small!= text.street
+        else 
+          p.product__text!= text
+section.content
   .container-fluid
     .row
-      each item, i in content.page.content
+      each item, i in page.content
         case i + 1
           when 1
             .col-xs-12.col-sm-8.col-sm-offset-4.col-md-7.col-md-offset-5
@@ -24,5 +30,17 @@ section.restaurant
             .col-xs-12.col-sm-6.col-sm-offset-6.col-md-4.col-sm-offset-8
               +content(item)
           when 4
-            .col-xs-12.col-sm-6.col-md-7
-              +content(item)
+            if (item.gallery)
+              .col-xs-12.col-sm-6.col-md-4
+                +content(item)
+              .col-xs-12.col-sm-6.col-md-8
+                .gallery
+                  .row
+                    each gallery in item.gallery
+                      .col-xs-12.col-sm-6.col-md-4
+                        .gallery__item
+                          a.gallery__link(href= gallery.link)
+                            img.img-responsive.gallery__img(src='img/' + gallery.img, alt= gallery.alt)
+            else 
+              .col-xs-12.col-sm-6.col-sm-offset-6.col-md-7.col-md-offset-5
+                +content(item)

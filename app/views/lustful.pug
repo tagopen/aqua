@@ -1,32 +1,15 @@
 extends base/_layout.pug
 block variables
-  - var title = 'Похотливый номер'
+  - var currPage = 'lustful'
+  +getPageContent(currPage)
+  - var title = page.h1
 block styles
 
 block scripts
 
 block content
-  header.header(class= content.lustful.header_class)
-    .container
-      .row
-        .col-xs-12.col-sm-5.col-md-4.pull-right
-          include components/_contact.pug
-      .row
-        .col-xs-12 
-          .row
-            .col-xs-12.col-sm-4.header__col
-              a.logo(href='#')
-                img.img-responsive.logo__img(src='img/logo/logo.png' alt='ЭКО ПАРК «7 НЕБО»')
-            .col-xs-12.col-sm-8 
-              h1.heading!= content.lustful.h1
-              h2.subheading.subheading--main!= content.lustful.subheading
-      .row
-        each advantage, i in content.lustful.advantages
-          .col-xs-12.col-sm-6.col-md-4.col-lg-3
-            .advantage
-              i.ic.advantage__icon(class= advantage.icon)
-              span.advantage__name!= advantage.name
-  include partials/_lustful.pug
+  include partials/_header-inside.pug
+  include partials/_product.pug
 block footer
   include partials/_footer.pug
 block modals

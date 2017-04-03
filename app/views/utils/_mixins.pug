@@ -1,0 +1,4 @@
+mixin getPageContent(currPage)
+  each value, key in content
+    if (key == currPage)
+      - page = value
