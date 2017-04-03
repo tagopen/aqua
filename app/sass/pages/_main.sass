@@ -85,6 +85,7 @@ a
   .subheading
     text-align: left   
     font: 400 18px/27px $main-font 
+    padding-left: 10px
     &--main
       font: 400 20px/32px $main-font 
       margin-bottom: 100px
@@ -457,37 +458,45 @@ a
       width: 64px 
       line-height: 60px 
   .product
+    margin-bottom: 50px
     &__content
-      padding: 70px 0
-      margin: 70px 0
+      padding: 70px 30px
+      margin: 80px 0
       background: #fff
       text-align: left
+      &--pl
+        padding-left: 70px
+    &__icon
+      position: absolute
+      height: 100%   
+      top: 0 
   .ic
     &--restaurant1
-      position: absolute
-      height: 100%
-      width: 80%
+      width: 85%
       left: 0
-      top: 0
     &--restaurant2
-      position: absolute
-      height: 100%
-      width: 60% 
+      width: 65% 
       right: 0
-      top: 0
     &--restaurant3
-      position: absolute
-      height: 100%
-      width: 60% 
+      width: 65% 
       left: 0
-      top: 0
     &--restaurant4
-      position: absolute
-      height: 100%
-      width: 60%   
-      left: 0
-      top: 0  
+      width: 85%   
+      left: 0 
 +r(992) 
   .header
     &__icons
-      margin: 80px 0             
+      margin: 80px 0 
+  .ic
+    &--restaurant1,
+    &--restaurant4 
+      width: 75%
++r(1200) 
+  .ic
+    &--restaurant1,
+    &--restaurant4 
+      width: 70%  
+    &--restaurant2,
+    &--restaurant3    
+      width: 60%   
+                    

@@ -193,7 +193,8 @@ a {
     padding-left: 10px; }
   .subheading {
     text-align: left;
-    font: 400 18px/27px "Open Sans", sans-serif; }
+    font: 400 18px/27px "Open Sans", sans-serif;
+    padding-left: 10px; }
     .subheading--main {
       font: 400 20px/32px "Open Sans", sans-serif;
       margin-bottom: 100px;
@@ -609,36 +610,40 @@ a {
     height: 64px;
     width: 64px;
     line-height: 60px; }
-  .product__content {
-    padding: 70px 0;
-    margin: 70px 0;
-    background: #fff;
-    text-align: left; }
+  .product {
+    margin-bottom: 50px; }
+    .product__content {
+      padding: 70px 30px;
+      margin: 80px 0;
+      background: #fff;
+      text-align: left; }
+      .product__content--pl {
+        padding-left: 70px; }
+    .product__icon {
+      position: absolute;
+      height: 100%;
+      top: 0; }
   .ic--restaurant1 {
-    position: absolute;
-    height: 100%;
-    width: 80%;
-    left: 0;
-    top: 0; }
+    width: 85%;
+    left: 0; }
   .ic--restaurant2 {
-    position: absolute;
-    height: 100%;
-    width: 60%;
-    right: 0;
-    top: 0; }
+    width: 65%;
+    right: 0; }
   .ic--restaurant3 {
-    position: absolute;
-    height: 100%;
-    width: 60%;
-    left: 0;
-    top: 0; }
+    width: 65%;
+    left: 0; }
   .ic--restaurant4 {
-    position: absolute;
-    height: 100%;
-    width: 60%;
-    left: 0;
-    top: 0; } }
+    width: 85%;
+    left: 0; } }
 
 @media only screen and (min-width: 992px) {
   .header__icons {
-    margin: 80px 0; } }
+    margin: 80px 0; }
+  .ic--restaurant1, .ic--restaurant4 {
+    width: 75%; } }
+
+@media only screen and (min-width: 1200px) {
+  .ic--restaurant1, .ic--restaurant4 {
+    width: 70%; }
+  .ic--restaurant2, .ic--restaurant3 {
+    width: 60%; } }
