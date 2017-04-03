@@ -8,6 +8,5 @@ footer.footer
       .col-xs-12.col-sm-4.col-md-3.pull-right.footer__col--social
         p.footer__text Мы в социальных сетях:  
         .footer__social.social
-          a.social__link.social__link--inst(href="#")
-          a.social__link.social__link--fb(href="#") 
-          a.social__link.social__link--youtube(href="#")  
+          each social in socials
+            a.social__link(class='social__link--' + social.icon, href= social.link)
