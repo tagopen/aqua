@@ -16,10 +16,10 @@ mixin content(item)
         else 
           p.product__text!= text
 
-section.circle
+section.terrace
   .container-fluid
     .row
-      each item, i in content.circle.content
+      each item, i in content.terrace.content
         case i + 1
           when 1
             .col-xs-12.col-sm-8.col-sm-offset-4.col-md-7.col-md-offset-5
