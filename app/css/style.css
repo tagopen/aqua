@@ -184,7 +184,8 @@ a {
   .contact {
     margin-bottom: 60px; }
     .contact__phone {
-      font: 400 16px/21px "Open Sans", sans-serif; }
+      font: 400 16px/21px "Open Sans", sans-serif;
+      white-space: nowrap; }
   .heading {
     text-align: left;
     font: 400 36px/45px "Roboto Slab", serif;
@@ -646,4 +647,4 @@ a {
   .ic--restaurant1, .ic--restaurant4 {
     width: 70%; }
   .ic--restaurant2, .ic--restaurant3 {
-    width: 60%; } }
+    width: 58%; } }
