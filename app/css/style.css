@@ -514,6 +514,42 @@ a {
 /* ---------------------------------------- */
 /* I N S I D E    P A G E S    S T Y L E    */
 /* ---------------------------------------- */
+.ic--size:before {
+  background: url(../img/icons/ic--size.svg) no-repeat;
+  background-size: cover;
+  height: 30px;
+  width: 30px; }
+
+.ic--wireless:before {
+  background: url(../img/icons/ic--wireless.svg) no-repeat;
+  background-size: cover;
+  height: 22px;
+  width: 30px; }
+
+.ic--bar:before {
+  background: url(../img/icons/ic--bar.svg) no-repeat;
+  background-size: cover;
+  width: 27px;
+  height: 30px; }
+
+.ic--plate:before {
+  background: url(../img/icons/ic--plate.svg) no-repeat;
+  background-size: cover;
+  height: 30px;
+  width: 30px; }
+
+.ic--dryer:before {
+  background: url(../img/icons/ic--dryer.svg) no-repeat;
+  background-size: cover;
+  height: 31px;
+  width: 30px; }
+
+.ic--safe:before {
+  background: url(../img/icons/ic--safe.svg) no-repeat;
+  background-size: cover;
+  height: 30px;
+  width: 30px; }
+
 /* ---------------------------------------- */
 /* R E S T U R A N T    S T Y L E           */
 /* ---------------------------------------- */
@@ -638,7 +674,7 @@ a {
 
 @media only screen and (min-width: 992px) {
   .header__icons {
-    margin: 80px 0; }
+    margin: 60px 0; }
   .ic--restaurant1, .ic--restaurant4 {
     width: 75%; } }
 
@@ -647,3 +683,32 @@ a {
     width: 70%; }
   .ic--restaurant2, .ic--restaurant3 {
     width: 58%; } }
+
+/* ---------------------------------------- */
+/* R E S T U R A N T    S T Y L E           */
+/* ---------------------------------------- */
+.header--circle {
+  background: url(../img/circle-header-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 0; }
+
+.ic--circle1 {
+  display: block;
+  background: url(../img/circle1.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--circle2 {
+  display: block;
+  background: url(../img/circle2.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--circle3 {
+  display: block;
+  background: url(../img/circle3.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--circle4 {
+  display: block;
+  background: url(../img/circle4.jpg) no-repeat;
+  background-size: cover; }
