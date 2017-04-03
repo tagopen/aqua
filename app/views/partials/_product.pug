@@ -17,8 +17,8 @@ mixin content(item)
           p.product__text!= text
 section.content
   .container-fluid
-    .row
-      each item, i in page.content
+    each item, i in page.content
+      .row
         case i + 1
           when 1
             .col-xs-12.col-sm-8.col-sm-offset-4.col-md-7.col-md-offset-5
