@@ -600,22 +600,18 @@ a {
   width: 37px; }
 
 .ic--restaurant1 {
-  display: block;
   background: url(../img/restaurant1.jpg) no-repeat;
   background-size: cover; }
 
 .ic--restaurant2 {
-  display: block;
   background: url(../img/restaurant2.jpg) no-repeat;
   background-size: cover; }
 
 .ic--restaurant3 {
-  display: block;
   background: url(../img/restaurant3.jpg) no-repeat;
   background-size: cover; }
 
 .ic--restaurant4 {
-  display: block;
   background: url(../img/restaurant4.jpg) no-repeat;
   background-size: cover; }
 
@@ -632,6 +628,8 @@ a {
     z-index: 25;
     text-align: center;
     padding: 50px 15px; }
+    .product__content--pr {
+      margin: 0; }
   .product__heading {
     font: 400 30px/36px "Roboto Slab", serif;
     color: #171717;
@@ -644,6 +642,9 @@ a {
     font: 400 14px/21px "Open Sans", sans-serif;
     color: #171717;
     margin: 0; }
+  .product__phone {
+    display: block;
+    color: #171717; }
 
 @media only screen and (min-width: 768px) {
   .header__icons {
@@ -661,31 +662,33 @@ a {
       text-align: left; }
       .product__content--pl {
         padding-left: 70px; }
+      .product__content--pr {
+        margin: 0; }
     .product__icon {
       position: absolute;
       height: 100%;
       top: 0; }
       .product__icon--left {
-        width: 85%;
+        width: 80%;
         left: 0; }
       .product__icon--right {
-        width: 65%;
-        right: 0; } }
+        width: 62%;
+        right: 0; }
+      .product__icon--3 {
+        width: 62%; } }
 
 @media only screen and (min-width: 992px) {
   .header__icons {
-    margin: 60px 0; }
-  .ic--restaurant1, .ic--restaurant4 {
-    width: 75%; } }
+    margin: 60px 0; } }
 
 @media only screen and (min-width: 1200px) {
-  .ic--restaurant1, .ic--restaurant4 {
+  .ic--restaurant1, .ic--restaurant4, .ic--circle1, .ic--forest1, .ic--lustful1, .ic--wedding1, .ic--village1, .ic--hayloft1, .ic--terrace1, .ic--egg1 {
     width: 70%; }
-  .ic--restaurant2, .ic--restaurant3 {
+  .ic--restaurant2, .ic--restaurant3, .ic--circle2, .ic--circle3, .ic--forest2, .ic--forest3, .ic--lustful2, .ic--lustful3, .ic--wedding2, .ic--wedding3, .ic--village2, .ic--village3, .ic--hayloft2, .ic--hayloft3, .ic--terrace2, .ic--terrace3, .ic--egg2, .ic--egg3 {
     width: 58%; } }
 
 /* ---------------------------------------- */
-/* R E S T U R A N T    S T Y L E           */
+/* C I R C L E    S T Y L E                 */
 /* ---------------------------------------- */
 .header--circle {
   background: url(../img/circle-header-bg.jpg) no-repeat;
@@ -694,21 +697,192 @@ a {
   padding-bottom: 0; }
 
 .ic--circle1 {
-  display: block;
   background: url(../img/circle1.jpg) no-repeat;
   background-size: cover; }
 
 .ic--circle2 {
-  display: block;
   background: url(../img/circle2.jpg) no-repeat;
   background-size: cover; }
 
 .ic--circle3 {
-  display: block;
   background: url(../img/circle3.jpg) no-repeat;
   background-size: cover; }
 
 .ic--circle4 {
-  display: block;
   background: url(../img/circle4.jpg) no-repeat;
+  background-size: cover; }
+
+/* ---------------------------------------- */
+/* F O R E S T    S T Y L E                 */
+/* ---------------------------------------- */
+.header--forest {
+  background: url(../img/forest-header-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 0; }
+
+.ic--forest1 {
+  background: url(../img/forest1.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--forest2 {
+  background: url(../img/forest2.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--forest3 {
+  background: url(../img/forest3.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--forest4 {
+  background: url(../img/forest4.jpg) no-repeat;
+  background-size: cover; }
+
+/* ---------------------------------------- */
+/* L U S T F U L    S T Y L E               */
+/* ---------------------------------------- */
+.header--lustful {
+  background: url(../img/lustful-header-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 0; }
+
+.ic--lustful1 {
+  background: url(../img/lustful1.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--lustful2 {
+  background: url(../img/lustful2.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--lustful3 {
+  background: url(../img/lustful3.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--lustful4 {
+  background: url(../img/lustful4.jpg) no-repeat;
+  background-size: cover; }
+
+/* ---------------------------------------- */
+/* W E D D I N G    S T Y L E               */
+/* ---------------------------------------- */
+.header--wedding {
+  background: url(../img/wedding-header-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 0; }
+
+.ic--wedding1 {
+  background: url(../img/wedding1.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--wedding2 {
+  background: url(../img/wedding2.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--wedding3 {
+  background: url(../img/wedding3.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--wedding4 {
+  background: url(../img/wedding4.jpg) no-repeat;
+  background-size: cover; }
+
+/* ---------------------------------------- */
+/* V I L L A G E    S T Y L E               */
+/* ---------------------------------------- */
+.header--village {
+  background: url(../img/village-header-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 0; }
+
+.ic--village1 {
+  background: url(../img/village1.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--village2 {
+  background: url(../img/village2.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--village3 {
+  background: url(../img/village3.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--village4 {
+  background: url(../img/village4.jpg) no-repeat;
+  background-size: cover; }
+
+/* ---------------------------------------- */
+/* H A Y L O F T    S T Y L E               */
+/* ---------------------------------------- */
+.header--hayloft {
+  background: url(../img/hayloft-header-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 0; }
+
+.ic--hayloft1 {
+  background: url(../img/hayloft1.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--hayloft2 {
+  background: url(../img/hayloft2.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--hayloft3 {
+  background: url(../img/hayloft3.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--hayloft4 {
+  background: url(../img/hayloft4.jpg) no-repeat;
+  background-size: cover; }
+
+/* ---------------------------------------- */
+/* T E R R A C E    S T Y L E               */
+/* ---------------------------------------- */
+.header--terrace {
+  background: url(../img/terrace-header-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 0; }
+
+.ic--terrace1 {
+  background: url(../img/terrace1.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--terrace2 {
+  background: url(../img/terrace2.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--terrace3 {
+  background: url(../img/terrace3.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--terrace4 {
+  background: url(../img/terrace4.jpg) no-repeat;
+  background-size: cover; }
+
+/* ---------------------------------------- */
+/* E G G    S T Y L E                       */
+/* ---------------------------------------- */
+.header--egg {
+  background: url(../img/egg-header-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 0; }
+
+.ic--egg1 {
+  background: url(../img/egg1.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--egg2 {
+  background: url(../img/egg2.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--egg3 {
+  background: url(../img/egg3.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--egg4 {
+  background: url(../img/egg4.jpg) no-repeat;
   background-size: cover; }

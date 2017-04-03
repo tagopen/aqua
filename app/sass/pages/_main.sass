@@ -451,19 +451,15 @@ a
       height: 30px
       width: 37px
   &--restaurant1
-    display: block
     background: url(../img/restaurant1.jpg) no-repeat
     background-size: cover 
   &--restaurant2 
-    display: block
     background: url(../img/restaurant2.jpg) no-repeat
     background-size: cover
   &--restaurant3
-    display: block
     background: url(../img/restaurant3.jpg) no-repeat
     background-size: cover
   &--restaurant4
-    display: block
     background: url(../img/restaurant4.jpg) no-repeat
     background-size: cover         
 .product
@@ -479,6 +475,8 @@ a
     z-index: 25
     text-align: center
     padding: 50px 15px
+    &--pr
+      margin: 0
   &__heading
     font: 400 30px/36px $font-roboto
     color: #171717  
@@ -491,6 +489,9 @@ a
     font: 400 14px/21px $main-font
     color: #171717  
     margin: 0
+  &__phone
+    display: block
+    color: #171717   
 +r(768)
   .header
     &__icons
@@ -509,33 +510,60 @@ a
       text-align: left
       &--pl
         padding-left: 70px
+      &--pr
+        margin: 0  
     &__icon
       position: absolute
       height: 100%   
       top: 0 
       &--left
-        width: 85%
+        width: 80%
         left: 0
       &--right
-        width: 65% 
+        width: 62% 
         right: 0 
+      &--3
+        width: 62%  
 +r(992) 
   .header
     &__icons
       margin: 60px 0 
   .ic
     &--restaurant1,
-    &--restaurant4 
-      width: 75%
+    &--restaurant4
 +r(1200) 
   .ic
     &--restaurant1,
-    &--restaurant4 
+    &--restaurant4,
+    &--circle1,
+    &--forest1,
+    &--lustful1,
+    &--wedding1,
+    &--village1,
+    &--hayloft1,
+    &--terrace1,
+    &--egg1
       width: 70%  
     &--restaurant2,
-    &--restaurant3    
+    &--restaurant3,
+    &--circle2,
+    &--circle3,
+    &--forest2,
+    &--forest3,
+    &--lustful2,
+    &--lustful3,
+    &--wedding2,
+    &--wedding3,
+    &--village2,
+    &--village3,
+    &--hayloft2,
+    &--hayloft3,
+    &--terrace2,
+    &--terrace3,
+    &--egg2,
+    &--egg3   
       width: 58%   
-+comment("resturant style")                    
++comment("circle style")                    
 .header
   &--circle
     background: url(../img/circle-header-bg.jpg) no-repeat
@@ -544,18 +572,154 @@ a
     padding-bottom: 0
 .ic    
   &--circle1
-    display: block
     background: url(../img/circle1.jpg) no-repeat
     background-size: cover 
   &--circle2 
-    display: block
     background: url(../img/circle2.jpg) no-repeat
     background-size: cover
   &--circle3
-    display: block
     background: url(../img/circle3.jpg) no-repeat
     background-size: cover
   &--circle4
-    display: block
     background: url(../img/circle4.jpg) no-repeat
-    background-size: cover     
+    background-size: cover 
++comment("forest style")   
+.header
+  &--forest
+    background: url(../img/forest-header-bg.jpg) no-repeat
+    background-size: cover
+    background-position: center center  
+    padding-bottom: 0
+.ic    
+  &--forest1
+    background: url(../img/forest1.jpg) no-repeat
+    background-size: cover 
+  &--forest2 
+    background: url(../img/forest2.jpg) no-repeat
+    background-size: cover
+  &--forest3
+    background: url(../img/forest3.jpg) no-repeat
+    background-size: cover
+  &--forest4
+    background: url(../img/forest4.jpg) no-repeat
+    background-size: cover  
++comment("lustful style")  
+.header
+  &--lustful
+    background: url(../img/lustful-header-bg.jpg) no-repeat
+    background-size: cover
+    background-position: center center  
+    padding-bottom: 0
+.ic    
+  &--lustful1
+    background: url(../img/lustful1.jpg) no-repeat
+    background-size: cover 
+  &--lustful2 
+    background: url(../img/lustful2.jpg) no-repeat
+    background-size: cover
+  &--lustful3
+    background: url(../img/lustful3.jpg) no-repeat
+    background-size: cover
+  &--lustful4
+    background: url(../img/lustful4.jpg) no-repeat
+    background-size: cover  
++comment("wedding style")  
+.header
+  &--wedding
+    background: url(../img/wedding-header-bg.jpg) no-repeat
+    background-size: cover
+    background-position: center center  
+    padding-bottom: 0
+.ic    
+  &--wedding1
+    background: url(../img/wedding1.jpg) no-repeat
+    background-size: cover 
+  &--wedding2 
+    background: url(../img/wedding2.jpg) no-repeat
+    background-size: cover
+  &--wedding3
+    background: url(../img/wedding3.jpg) no-repeat
+    background-size: cover
+  &--wedding4
+    background: url(../img/wedding4.jpg) no-repeat
+    background-size: cover  
++comment("village style")  
+.header
+  &--village
+    background: url(../img/village-header-bg.jpg) no-repeat
+    background-size: cover
+    background-position: center center  
+    padding-bottom: 0
+.ic    
+  &--village1
+    background: url(../img/village1.jpg) no-repeat
+    background-size: cover 
+  &--village2 
+    background: url(../img/village2.jpg) no-repeat
+    background-size: cover
+  &--village3
+    background: url(../img/village3.jpg) no-repeat
+    background-size: cover
+  &--village4
+    background: url(../img/village4.jpg) no-repeat
+    background-size: cover 
++comment("hayloft style")  
+.header
+  &--hayloft
+    background: url(../img/hayloft-header-bg.jpg) no-repeat
+    background-size: cover
+    background-position: center center  
+    padding-bottom: 0
+.ic    
+  &--hayloft1
+    background: url(../img/hayloft1.jpg) no-repeat
+    background-size: cover 
+  &--hayloft2 
+    background: url(../img/hayloft2.jpg) no-repeat
+    background-size: cover
+  &--hayloft3
+    background: url(../img/hayloft3.jpg) no-repeat
+    background-size: cover
+  &--hayloft4
+    background: url(../img/hayloft4.jpg) no-repeat
+    background-size: cover                        
++comment("terrace style")  
+.header
+  &--terrace
+    background: url(../img/terrace-header-bg.jpg) no-repeat
+    background-size: cover
+    background-position: center center  
+    padding-bottom: 0
+.ic    
+  &--terrace1
+    background: url(../img/terrace1.jpg) no-repeat
+    background-size: cover 
+  &--terrace2 
+    background: url(../img/terrace2.jpg) no-repeat
+    background-size: cover
+  &--terrace3
+    background: url(../img/terrace3.jpg) no-repeat
+    background-size: cover
+  &--terrace4
+    background: url(../img/terrace4.jpg) no-repeat
+    background-size: cover        
++comment("egg style")  
+.header
+  &--egg
+    background: url(../img/egg-header-bg.jpg) no-repeat
+    background-size: cover
+    background-position: center center  
+    padding-bottom: 0
+.ic    
+  &--egg1
+    background: url(../img/egg1.jpg) no-repeat
+    background-size: cover 
+  &--egg2 
+    background: url(../img/egg2.jpg) no-repeat
+    background-size: cover
+  &--egg3
+    background: url(../img/egg3.jpg) no-repeat
+    background-size: cover
+  &--egg4
+    background: url(../img/egg4.jpg) no-repeat
+    background-size: cover         
