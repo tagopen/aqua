@@ -377,6 +377,8 @@ a
 .advantage
   margin-bottom: 25px
   &__icon
+    display: table-cell
+    vertical-align: middle
     margin-right: 30px
     height: 50px
     width: 50px
@@ -384,6 +386,9 @@ a
     border-radius: 50%
     line-height: 44px
   &__name
+    display: table-cell
+    vertical-align: middle
+    padding-left: 30px
     font: 400 14px/18px $main-font 
     text-shadow: 1px 1.7px 5px rgba(0, 3, 2, 0.25)
     color: #fff 
@@ -471,19 +476,12 @@ a
       position: absolute
       height: 100%   
       top: 0 
-  .ic
-    &--restaurant1
-      width: 85%
-      left: 0
-    &--restaurant2
-      width: 65% 
-      right: 0
-    &--restaurant3
-      width: 65% 
-      left: 0
-    &--restaurant4
-      width: 85%   
-      left: 0 
+      &--left
+        width: 85%
+        left: 0
+      &--right
+        width: 65% 
+        right: 0 
 +r(992) 
   .header
     &__icons
