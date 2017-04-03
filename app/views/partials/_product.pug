@@ -37,24 +37,23 @@ section.content
                     +content(item)
                 .col-xs-12.col-sm-6.col-md-8
                   .gallery
-                    .row
-                      each gallery, i in item.gallery
-                        case ((i + 1) % 8)
-                          when 0
-                          when 7
-                            .col-xs-12.col-sm-6
-                              .gallery
-                                a.intro__link(href= gallery.link)
-                                  img.img-responsive.intro__img(src='img/' + gallery.img, alt= gallery.alt)
-                                  .intro__hover
-                                    .intro__hover-content!= gallery.text
-                          default
-                            .col-xs-12.col-sm-6.col-md-4
-                              .gallery
-                                a.intro__link(href= gallery.link)
-                                  img.img-responsive.intro__img(src='img/' + gallery.img, alt= gallery.alt)
-                                  .intro__hover
-                                    .intro__hover-content!= gallery.text
+                    each gallery, i in item.gallery
+                      case ((i + 1) % 8)
+                        when 0
+                        when 7
+                          .col-xs-12.col-sm-6
+                            .gallery
+                              a.intro__link(href= gallery.link)
+                                img.img-responsive.intro__img(src='img/' + gallery.img, alt= gallery.alt)
+                                .intro__hover
+                                  .intro__hover-content!= gallery.text
+                        default
+                          .col-xs-12.col-sm-6.col-md-4
+                            .gallery
+                              a.intro__link(href= gallery.link)
+                                img.img-responsive.intro__img(src='img/' + gallery.img, alt= gallery.alt)
+                                .intro__hover
+                                  .intro__hover-content!= gallery.text
               else 
                 .col-xs-12.col-sm-6.col-sm-offset-6.col-md-7.col-md-offset-5
                   .product__content.product__content--pl
