@@ -579,12 +579,28 @@ a {
 .product {
   position: relative; }
   .product__icon {
-    height: 300px; }
+    height: 300px;
+    float: left;
+    width: 100%; }
     .product__icon:before {
       clear: both; }
   .product__content {
     position: relative;
-    z-index: 25; }
+    z-index: 25;
+    text-align: center;
+    padding: 50px 15px; }
+  .product__heading {
+    font: 400 30px/36px "Roboto Slab", serif;
+    color: #171717;
+    margin: 0 0 30px; }
+  .product__subheading {
+    font: 400 18px/27px "Open Sans", sans-serif;
+    color: #171717;
+    margin-bottom: 20px; }
+  .product__text {
+    font: 400 14px/21px "Open Sans", sans-serif;
+    color: #171717;
+    margin: 0; }
 
 @media only screen and (min-width: 768px) {
   .header__icons {
@@ -594,11 +610,14 @@ a {
     width: 64px;
     line-height: 60px; }
   .product__content {
-    padding: 100px 0; }
+    padding: 70px 0;
+    margin: 70px 0;
+    background: #fff;
+    text-align: left; }
   .ic--restaurant1 {
     position: absolute;
     height: 100%;
-    width: 60%;
+    width: 80%;
     left: 0;
     top: 0; }
   .ic--restaurant2 {
