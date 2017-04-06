@@ -564,6 +564,12 @@ a {
   background-position: center center;
   padding-bottom: 0; }
 
+.header--bath {
+  background: url(../img/bath-header-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 0; }
+
 .advantage {
   margin-bottom: 25px; }
   .advantage__icon {
@@ -604,6 +610,26 @@ a {
   height: 30px;
   width: 37px; }
 
+.ic--saline:before {
+  background: url(../img/icons/ic--saline.svg);
+  height: 32px;
+  width: 27px; }
+
+.ic--sauna:before {
+  background: url(../img/icons/ic--sauna.svg);
+  height: 30px;
+  width: 17px; }
+
+.ic--infared:before {
+  background: url(../img/icons/ic--infared.svg);
+  height: 20px;
+  width: 37px; }
+
+.ic--vat:before {
+  background: url(../img/icons/ic--vat.svg);
+  height: 25px;
+  width: 45px; }
+
 .ic--restaurant1 {
   background: url(../img/restaurant1.jpg) no-repeat;
   background-size: cover; }
@@ -618,6 +644,30 @@ a {
 
 .ic--restaurant4 {
   background: url(../img/restaurant4.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--bath1 {
+  background: url(../img/bath1.png) no-repeat;
+  background-size: cover; }
+
+.ic--bath2 {
+  background: url(../img/bath2.png) no-repeat;
+  background-size: cover; }
+
+.ic--bath3 {
+  background: url(../img/bath3.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--bath4 {
+  background: url(../img/bath4.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--bath5 {
+  background: url(../img/bath5.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--bath6 {
+  background: url(../img/bath6.jpg) no-repeat;
   background-size: cover; }
 
 .product {
@@ -682,7 +732,9 @@ a {
         width: 62%;
         right: 0; }
       .product__icon--3 {
-        width: 62%; } }
+        width: 62%; }
+      .product__icon--static {
+        width: 50%; } }
 
 @media only screen and (min-width: 992px) {
   .header__icons {
@@ -691,10 +743,8 @@ a {
 @media only screen and (min-width: 1200px) {
   .product__heading {
     font: 400 36px/40px "Roboto Slab", serif; }
-  .ic--restaurant1, .ic--restaurant4, .ic--circle1, .ic--forest1, .ic--lustful1, .ic--wedding1, .ic--village1, .ic--hayloft1, .ic--terrace1, .ic--egg1 {
-    width: 70%; }
-  .ic--restaurant2, .ic--restaurant3, .ic--circle2, .ic--circle3, .ic--forest2, .ic--forest3, .ic--lustful2, .ic--lustful3, .ic--wedding2, .ic--wedding3, .ic--village2, .ic--village3, .ic--hayloft2, .ic--hayloft3, .ic--terrace2, .ic--terrace3, .ic--egg2, .ic--egg3 {
-    width: 58%; } }
+  .ic--restaurant1, .ic--restaurant4, .ic--circle1, .ic--forest1, .ic--lustful1, .ic--wedding1, .ic--village1, .ic--hayloft1, .ic--terrace1, .ic--wooden1, .ic--egg1 {
+    width: 70%; } }
 
 /* ---------------------------------------- */
 /* C I R C L E    S T Y L E                 */
