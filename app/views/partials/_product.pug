@@ -64,8 +64,6 @@ section.content
                 .col-xs-12.col-sm-4.col-md-4
                   .product__content.product__content--pl
                     +content(item)
-          if (currPage == 'bath')
-            - item.icon = item.icon + ' product__icon--static'
           case ((i + 1) % 4)
             when 0
               if (currPage == 'restaurant')
