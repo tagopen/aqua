@@ -46,14 +46,16 @@ section.content
                               a.intro__link(href= gallery.link)
                                 img.img-responsive.intro__img(src='img/' + gallery.img, alt= gallery.alt)
                                 .intro__hover
-                                  .intro__hover-content!= gallery.text
+                                  .intro__hover-content
+                                    .intro__hover-content-text!= gallery.text
                         default
                           .col-xs-12.col-sm-6.col-md-4
                             .gallery
                               a.intro__link(href= gallery.link)
                                 img.img-responsive.intro__img(src='img/' + gallery.img, alt= gallery.alt)
                                 .intro__hover
-                                  .intro__hover-content!= gallery.text
+                                  .intro__hover-content
+                                    .intro__hover-content-text!= gallery.text
               else 
                 .col-xs-12.col-sm-6.col-sm-offset-6.col-md-7.col-md-offset-5
                   .product__content.product__content--pl

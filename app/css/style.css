@@ -251,12 +251,17 @@ a {
     text-align: center;
     padding: 15px; }
     .intro__hover-content {
+      display: table;
+      width: 100%;
       position: relative;
       z-index: 25;
       height: 100%;
-      border: 2px solid #fff;
-      color: #fff;
-      font: 400 16px/130px "Open Sans", sans-serif; }
+      border: 2px solid #fff; }
+      .intro__hover-content-text {
+        display: table-cell;
+        vertical-align: middle;
+        color: #fff;
+        font: 400 16px/18px "Open Sans", sans-serif; }
   .intro__btn {
     -webkit-border-radius: 0;
             border-radius: 0;
@@ -631,7 +636,7 @@ a {
     .product__content--pr {
       margin: 0; }
   .product__heading {
-    font: 400 30px/36px "Roboto Slab", serif;
+    font: 400 24px/36px "Roboto Slab", serif;
     color: #171717;
     margin: 0 0 30px; }
   .product__subheading {
@@ -655,6 +660,8 @@ a {
     line-height: 60px; }
   .product {
     margin-bottom: 50px; }
+    .product__heading {
+      font: 400 30px/36px "Roboto Slab", serif; }
     .product__content {
       padding: 70px 30px;
       margin: 80px 0;
@@ -682,6 +689,8 @@ a {
     margin: 60px 0; } }
 
 @media only screen and (min-width: 1200px) {
+  .product__heading {
+    font: 400 36px/40px "Roboto Slab", serif; }
   .ic--restaurant1, .ic--restaurant4, .ic--circle1, .ic--forest1, .ic--lustful1, .ic--wedding1, .ic--village1, .ic--hayloft1, .ic--terrace1, .ic--egg1 {
     width: 70%; }
   .ic--restaurant2, .ic--restaurant3, .ic--circle2, .ic--circle3, .ic--forest2, .ic--forest3, .ic--lustful2, .ic--lustful3, .ic--wedding2, .ic--wedding3, .ic--village2, .ic--village3, .ic--hayloft2, .ic--hayloft3, .ic--terrace2, .ic--terrace3, .ic--egg2, .ic--egg3 {
@@ -886,3 +895,31 @@ a {
 .ic--egg4 {
   background: url(../img/egg4.jpg) no-repeat;
   background-size: cover; }
+
+/* ---------------------------------------- */
+/* W O O D E N    S T Y L E                 */
+/* ---------------------------------------- */
+.header--wooden {
+  background: url(../img/wooden-header-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 0; }
+
+.ic--wooden1 {
+  background: url(../img/wooden1.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--wooden2 {
+  background: url(../img/wooden2.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--wooden3 {
+  background: url(../img/wooden3.jpg) no-repeat;
+  background-size: cover; }
+
+.ic--wooden4 {
+  background: url(../img/wooden4.jpg) no-repeat;
+  background-size: cover; }
+
+.gallery {
+  text-align: center; }

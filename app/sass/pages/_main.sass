@@ -137,12 +137,17 @@ a
     text-align: center
     padding: 15px
     &-content
+      display: table
+      width: 100%
       position: relative
       z-index: 25
       height: 100%
       border: 2px solid #fff
-      color: #fff
-      font: 400 16px/130px $main-font
+      &-text
+        display: table-cell
+        vertical-align: middle
+        color: #fff
+        font: 400 16px/18px $main-font
   &__btn
     border-radius: 0
     border: 1px solid #362e2b
@@ -478,7 +483,7 @@ a
     &--pr
       margin: 0
   &__heading
-    font: 400 30px/36px $font-roboto
+    font: 400 24px/36px $font-roboto
     color: #171717  
     margin: 0 0 30px
   &__subheading
@@ -503,6 +508,8 @@ a
       line-height: 60px 
   .product
     margin-bottom: 50px
+    &__heading
+      font: 400 30px/36px $font-roboto
     &__content
       padding: 70px 30px
       margin: 80px 0
@@ -532,6 +539,9 @@ a
     &--restaurant1,
     &--restaurant4
 +r(1200) 
+  .product
+    &__heading
+      font: 400 36px/40px $font-roboto
   .ic
     &--restaurant1,
     &--restaurant4,
@@ -722,4 +732,26 @@ a
     background-size: cover
   &--egg4
     background: url(../img/egg4.jpg) no-repeat
-    background-size: cover           
+    background-size: cover 
++comment("wooden style")  
+.header
+  &--wooden
+    background: url(../img/wooden-header-bg.jpg) no-repeat
+    background-size: cover
+    background-position: center center  
+    padding-bottom: 0
+.ic    
+  &--wooden1
+    background: url(../img/wooden1.jpg) no-repeat
+    background-size: cover 
+  &--wooden2 
+    background: url(../img/wooden2.jpg) no-repeat
+    background-size: cover
+  &--wooden3
+    background: url(../img/wooden3.jpg) no-repeat
+    background-size: cover
+  &--wooden4
+    background: url(../img/wooden4.jpg) no-repeat
+    background-size: cover     
+.gallery
+  text-align: center            
