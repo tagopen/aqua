@@ -416,6 +416,11 @@ a
     background-size: cover
     background-position: center center  
     padding-bottom: 0
+  &--bath
+    background: url(../img/bath-header-bg.jpg) no-repeat
+    background-size: cover
+    background-position: center center  
+    padding-bottom: 0  
 .advantage
   margin-bottom: 25px
   &__icon
@@ -455,6 +460,26 @@ a
       background: url(../img/icons/ic--cake.svg)
       height: 30px
       width: 37px
+  &--saline
+    &:before
+      background: url(../img/icons/ic--saline.svg)
+      height: 32px
+      width: 27px
+  &--sauna
+    &:before
+      background: url(../img/icons/ic--sauna.svg)
+      height: 30px
+      width: 17px
+  &--infared
+    &:before
+      background: url(../img/icons/ic--infared.svg)
+      height: 20px
+      width: 37px
+  &--vat
+    &:before
+      background: url(../img/icons/ic--vat.svg)
+      height: 25px
+      width: 45px                
   &--restaurant1
     background: url(../img/restaurant1.jpg) no-repeat
     background-size: cover 
@@ -466,7 +491,25 @@ a
     background-size: cover
   &--restaurant4
     background: url(../img/restaurant4.jpg) no-repeat
-    background-size: cover         
+    background-size: cover   
+  &--bath1
+    background: url(../img/bath1.png) no-repeat
+    background-size: cover 
+  &--bath2 
+    background: url(../img/bath2.png) no-repeat
+    background-size: cover
+  &--bath3
+    background: url(../img/bath3.jpg) no-repeat
+    background-size: cover
+  &--bath4
+    background: url(../img/bath4.jpg) no-repeat
+    background-size: cover  
+  &--bath5
+    background: url(../img/bath5.jpg) no-repeat
+    background-size: cover
+  &--bath6
+    background: url(../img/bath6.jpg) no-repeat
+    background-size: cover            
 .product
   position: relative   
   &__icon
@@ -530,7 +573,7 @@ a
         width: 62% 
         right: 0 
       &--3
-        width: 62%  
+        width: 62%   
 +r(992) 
   .header
     &__icons
@@ -552,6 +595,7 @@ a
     &--village1,
     &--hayloft1,
     &--terrace1,
+    &--wooden1,
     &--egg1
       width: 70%  
     &--restaurant2,
@@ -571,8 +615,7 @@ a
     &--terrace2,
     &--terrace3,
     &--egg2,
-    &--egg3   
-      width: 58%   
+    &--egg3 
 +comment("circle style")                    
 .header
   &--circle
