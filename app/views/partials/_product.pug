@@ -68,8 +68,9 @@ section.content
             when 0
               if (currPage == 'restaurant')
                 i.ic.product__icon.product__icon--left(class= item.icon)
-              else
-                i.ic.product__icon.product__icon--right(class= item.icon)
+              else 
+                unless (item.gallery)
+                  i.ic.product__icon.product__icon--right(class= item.icon)
             when 1
               if (currPage == 'bath')
                 i.ic.product__icon.product__icon--left.product__icon--bath(class= item.icon)
