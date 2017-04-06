@@ -17,7 +17,7 @@ section.content
     each item, i in page.content
       .row
         .clearfix.product
-          case i + 1
+          case ((i + 1) % 4)
             when 1
               .col-xs-12.col-sm-7.col-sm-offset-5.col-md-7.col-md-offset-5
                 .product__content.product__content--pl
@@ -30,7 +30,7 @@ section.content
               .col-xs-12.col-sm-4.col-sm-offset-8.col-md-4.col-sm-offset-8.col-lg-offset-8
                 .product__content
                   +content(item)
-            when 4
+            when 0
               if (item.gallery)
                 .col-xs-12.col-sm-6.col-md-4
                   .product__content.product__content--pr
@@ -56,18 +56,26 @@ section.content
                                 .intro__hover
                                   .intro__hover-content
                                     .intro__hover-content-text!= gallery.text
-              else 
+              else if (currPage == 'restaurant')
                 .col-xs-12.col-sm-6.col-sm-offset-6.col-md-7.col-md-offset-5
                   .product__content.product__content--pl
                     +content(item)
+              else 
+                .col-xs-12.col-sm-4.col-md-4
+                  .product__content.product__content--pl
+                    +content(item)
+          if (currPage == 'bath')
+            - item.icon = item.icon + ' product__icon--static'
           case ((i + 1) % 4)
             when 0
-              unless (item.gallery)
+              if (currPage == 'restaurant')
+                i.ic.product__icon.product__icon--left(class= item.icon)
+              else
                 i.ic.product__icon.product__icon--right(class= item.icon)
             when 1
               i.ic.product__icon.product__icon--left(class= item.icon)
-            when 3
-              i.ic.product__icon.product__icon--left.product__icon--3(class= item.icon)
             when 2
               i.ic.product__icon.product__icon--right(class= item.icon)
+            when 3
+              i.ic.product__icon.product__icon--left.product__icon--3(class= item.icon)
 
