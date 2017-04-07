@@ -78,3 +78,12 @@ $(window).on('resize', function(){
     setEqualHeight($('.item__text'));
   }
 }).trigger('resize');
+
+$('.slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: true,
+  autoplay: true,
+  autoplaySpeed: 3000
+});
