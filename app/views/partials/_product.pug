@@ -19,72 +19,73 @@ section.content
       each item, i in page.content
         .row
           .clearfix.product
-            case ((i + 1) % 4)
-              when 1
-                .col-xs-12.col-sm-7.col-sm-offset-5.col-md-7.col-md-offset-5
-                  .product__content.product__content--pl
-                    +content(item)
-              when 2
-                .col-xs-12.col-sm-4.col-md-4
-                  .product__content
-                    +content(item)
-              when 3
-                .col-xs-12.col-sm-4.col-sm-offset-8.col-md-4.col-sm-offset-8.col-lg-offset-8
-                  .product__content
-                    +content(item)
-              when 0
-                if (item.gallery)
-                  .col-xs-12.col-sm-6.col-md-4
-                    .product__content.product__content--pr
-                      +content(item)
-                  .col-xs-12.col-sm-6.col-md-8
-                    .gallery
-                      each gallery, i in item.gallery
-                        case ((i + 1) % 8)
-                          when 0
-                          when 7
-                            .col-xs-12.col-sm-6
-                              .gallery
-                                a.intro__link(href= gallery.link)
-                                  img.img-responsive.intro__img(src='img/' + gallery.img, alt= gallery.alt)
-                                  .intro__hover
-                                    .intro__hover-content
-                                      .intro__hover-content-text!= gallery.text
-                          default
-                            .col-xs-12.col-sm-6.col-md-4
-                              .gallery
-                                a.intro__link(href= gallery.link)
-                                  img.img-responsive.intro__img(src='img/' + gallery.img, alt= gallery.alt)
-                                  .intro__hover
-                                    .intro__hover-content
-                                      .intro__hover-content-text!= gallery.text
-                else if (currPage == 'restaurant')
-                  .col-xs-12.col-sm-6.col-sm-offset-6.col-md-7.col-md-offset-5
-                    .product__content.product__content--pl
-                      +content(item)
-                else
-                  .col-xs-12.col-sm-4.col-md-4
-                    .product__content.product__content--pl
-                      +content(item)
-            if (item.icon)
+            unless (item.carousel)
               case ((i + 1) % 4)
-                when 0
-                  if (currPage == 'restaurant')
-                    i.ic.product__icon.product__icon--left(class= item.icon)
-                  else 
-                    unless (item.gallery)
-                      i.ic.product__icon.product__icon--right(class= item.icon)
                 when 1
-                  if (currPage == 'bath')
-                    i.ic.product__icon.product__icon--left.product__icon--bath(class= item.icon)
-                  else 
-                    i.ic.product__icon.product__icon--left(class= item.icon)
+                  .col-xs-12.col-sm-7.col-sm-offset-5.col-md-7.col-md-offset-5
+                    .product__content.product__content--pl
+                      +content(item)
                 when 2
-                  i.ic.product__icon.product__icon--right(class= item.icon)
+                  .col-xs-12.col-sm-4.col-md-4
+                    .product__content
+                      +content(item)
                 when 3
-                  i.ic.product__icon.product__icon--left.product__icon--3(class= item.icon)
-    else if (page.carousel)
-      .slider
-        each item, i in page.carousel
-            .slider__item
-              img.img-responsive.slider__img(src='img/slider/' + item.img, alt=item.alt)
+                  .col-xs-12.col-sm-4.col-sm-offset-8.col-md-4.col-sm-offset-8.col-lg-offset-8
+                    .product__content
+                      +content(item)
+                when 0
+                  if (item.gallery)
+                    .col-xs-12.col-sm-6.col-md-4
+                      .product__content.product__content--pr
+                        +content(item)
+                    .col-xs-12.col-sm-6.col-md-8
+                      .gallery
+                        each gallery, i in item.gallery
+                          case ((i + 1) % 8)
+                            when 0
+                            when 7
+                              .col-xs-12.col-sm-6
+                                .gallery
+                                  a.intro__link(href= gallery.link)
+                                    img.img-responsive.intro__img(src='img/' + gallery.img, alt= gallery.alt)
+                                    .intro__hover
+                                      .intro__hover-content
+                                        .intro__hover-content-text!= gallery.text
+                            default
+                              .col-xs-12.col-sm-6.col-md-4
+                                .gallery
+                                  a.intro__link(href= gallery.link)
+                                    img.img-responsive.intro__img(src='img/' + gallery.img, alt= gallery.alt)
+                                    .intro__hover
+                                      .intro__hover-content
+                                        .intro__hover-content-text!= gallery.text
+                  else if (currPage == 'restaurant')
+                    .col-xs-12.col-sm-6.col-sm-offset-6.col-md-7.col-md-offset-5
+                      .product__content.product__content--pl
+                        +content(item)
+                  else
+                    .col-xs-12.col-sm-4.col-md-4
+                      .product__content.product__content--pl
+                        +content(item)
+              if (item.icon)
+                case ((i + 1) % 4)
+                  when 0
+                    if (currPage == 'restaurant')
+                      i.ic.product__icon.product__icon--left(class= item.icon)
+                    else 
+                      unless (item.gallery)
+                        i.ic.product__icon.product__icon--right(class= item.icon)
+                  when 1
+                    if ((currPage == 'bath') || (currPage == 'event'))
+                      i.ic.product__icon.product__icon--left.product__icon--bath(class= item.icon)
+                    else 
+                      i.ic.product__icon.product__icon--left(class= item.icon)
+                  when 2
+                    i.ic.product__icon.product__icon--right(class= item.icon)
+                  when 3
+                    i.ic.product__icon.product__icon--left.product__icon--3(class= item.icon)
+            else
+              .slider
+                each carousel, i in item.carousel
+                    .slider__item
+                      img.img-responsive.slider__img(src='img/slider/' + carousel.img, alt=carousel.alt)
