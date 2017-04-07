@@ -11,6 +11,7 @@ a
   background: url(../img/bg1.jpg) no-repeat
   background-size: cover
   padding-bottom: 65px
+  margin-bottom: 30px
   &__col
     text-align: center
   &__scroll
@@ -72,6 +73,7 @@ a
 +r(760)
   .header
     padding-bottom: 0
+    margin-bottom: 50px
   .contact
     margin-bottom: 60px
     &__phone  
@@ -103,7 +105,7 @@ a
       background-size: cover
 +comment("intro style")  
 .intro
-  padding: 50px 0 75px  
+  padding: 25px 0 75px  
   &__text
     color: #171717
     font: 400 14px/21px $main-font
@@ -163,7 +165,7 @@ a
       max-width: 450px       
 +r(760)  
   .intro
-    padding: 70px 0
+    padding: 70px 0 70px
     &__text
       font: 400 16px/24px $main-font
       margin-bottom: 30px
@@ -173,7 +175,7 @@ a
       margin-bottom: 30px  
 +r(992)    
   .intro
-    padding: 85px 0  
+    padding: 60px 0 60px
     &__text
       font: 400 20px/30px $main-font
     &__subtext
@@ -197,29 +199,35 @@ a
     margin-bottom: 25px
   &:hover
     color: #fff  
-    transition: all 0.3s ease
+    transition: all 0.5s ease
     .item__btn
       visibility: visible
       opacity: 1
+      transition: all 0.5s ease
     .item__icon
       visibility: hidden
+      transition: all 0.5s ease
       opacity: 0  
   &--1
     &:hover
       background: url(../img/item1.png) no-repeat
       background-size: cover
+      transition: all 0.5s ease
   &--2
     &:hover
       background: url(../img/item2.png) no-repeat
       background-size: cover
+      transition: all 0.5s ease
   &--3
     &:hover
       background: url(../img/item3.png) no-repeat
       background-size: cover
+      transition: all 0.5s ease
   &--4 
     &:hover
       background: url(../img/item4.png) no-repeat
       background-size: cover 
+      transition: all 0.5s ease
   &__btn
     border-radius: 0
     background-color: transparent
@@ -227,6 +235,7 @@ a
     font: 400 16px/18px $main-font
     padding: 10px 20px
     opacity: 0
+    color: #fff
     visibility: hidden
     &:hover
       background-color: #fff
@@ -539,6 +548,8 @@ a
     margin: 0
   &__phone
     display: block
+    color: #171717  
+  &__title
     color: #171717   
 +r(768)
   .header
@@ -553,8 +564,16 @@ a
     margin-bottom: 50px
     &__heading
       font: 400 30px/36px $font-roboto
+    &__text
+      font: 400 18px/21px $main-font   
+    &__title
+      font: 600 18px/21px $main-font 
+      margin-top: 10px  
+      display: block
+    &__phone  
+      font: 600 18px/21px $main-font 
     &__content
-      padding: 70px 30px
+      padding: 50px 30px
       margin: 80px 0
       background: #fff
       text-align: left
@@ -567,13 +586,15 @@ a
       height: 100%   
       top: 0 
       &--left
-        width: 80%
+        width: 78%
         left: 0
       &--right
-        width: 62% 
+        width: 58% 
         right: 0 
       &--3
-        width: 62%   
+        width: 58% 
+      &--bath
+        width: 40% 
 +r(992) 
   .header
     &__icons
@@ -626,16 +647,13 @@ a
 .ic    
   &--circle1
     background: url(../img/circle1.jpg) no-repeat
-    background-size: cover 
+    background-size: contain 
   &--circle2 
     background: url(../img/circle2.jpg) no-repeat
-    background-size: cover
+    background-size: contain
   &--circle3
     background: url(../img/circle3.jpg) no-repeat
-    background-size: cover
-  &--circle4
-    background: url(../img/circle4.jpg) no-repeat
-    background-size: cover 
+    background-size: contain
 +comment("forest style")   
 .header
   &--forest
@@ -646,16 +664,13 @@ a
 .ic    
   &--forest1
     background: url(../img/forest1.jpg) no-repeat
-    background-size: cover 
+    background-size: contain 
   &--forest2 
     background: url(../img/forest2.jpg) no-repeat
-    background-size: cover
+    background-size: contain
   &--forest3
     background: url(../img/forest3.jpg) no-repeat
-    background-size: cover
-  &--forest4
-    background: url(../img/forest4.jpg) no-repeat
-    background-size: cover  
+    background-size: contain
 +comment("lustful style")  
 .header
   &--lustful
@@ -666,16 +681,13 @@ a
 .ic    
   &--lustful1
     background: url(../img/lustful1.jpg) no-repeat
-    background-size: cover 
+    background-size: contain
   &--lustful2 
     background: url(../img/lustful2.jpg) no-repeat
-    background-size: cover
+    background-size: contain
   &--lustful3
     background: url(../img/lustful3.jpg) no-repeat
-    background-size: cover
-  &--lustful4
-    background: url(../img/lustful4.jpg) no-repeat
-    background-size: cover  
+    background-size: contain
 +comment("wedding style")  
 .header
   &--wedding
@@ -686,16 +698,13 @@ a
 .ic    
   &--wedding1
     background: url(../img/wedding1.jpg) no-repeat
-    background-size: cover 
+    background-size: contain 
   &--wedding2 
     background: url(../img/wedding2.jpg) no-repeat
-    background-size: cover
+    background-size: contain
   &--wedding3
     background: url(../img/wedding3.jpg) no-repeat
-    background-size: cover
-  &--wedding4
-    background: url(../img/wedding4.jpg) no-repeat
-    background-size: cover  
+    background-size: contain 
 +comment("village style")  
 .header
   &--village
@@ -706,16 +715,13 @@ a
 .ic    
   &--village1
     background: url(../img/village1.jpg) no-repeat
-    background-size: cover 
+    background-size: contain 
   &--village2 
     background: url(../img/village2.jpg) no-repeat
-    background-size: cover
+    background-size: contain
   &--village3
     background: url(../img/village3.jpg) no-repeat
-    background-size: cover
-  &--village4
-    background: url(../img/village4.jpg) no-repeat
-    background-size: cover 
+    background-size: contain
 +comment("hayloft style")  
 .header
   &--hayloft
@@ -726,16 +732,13 @@ a
 .ic    
   &--hayloft1
     background: url(../img/hayloft1.jpg) no-repeat
-    background-size: cover 
+    background-size: contain   
   &--hayloft2 
     background: url(../img/hayloft2.jpg) no-repeat
-    background-size: cover
+    background-size: contain  
   &--hayloft3
     background: url(../img/hayloft3.jpg) no-repeat
-    background-size: cover
-  &--hayloft4
-    background: url(../img/hayloft4.jpg) no-repeat
-    background-size: cover                        
+    background-size: contain                         
 +comment("terrace style")  
 .header
   &--terrace
@@ -746,16 +749,13 @@ a
 .ic    
   &--terrace1
     background: url(../img/terrace1.jpg) no-repeat
-    background-size: cover 
+    background-size: contain  
   &--terrace2 
     background: url(../img/terrace2.jpg) no-repeat
-    background-size: cover
+    background-size: contain  
   &--terrace3
     background: url(../img/terrace3.jpg) no-repeat
-    background-size: cover
-  &--terrace4
-    background: url(../img/terrace4.jpg) no-repeat
-    background-size: cover        
+    background-size: contain         
 +comment("egg style")  
 .header
   &--egg
@@ -766,16 +766,13 @@ a
 .ic    
   &--egg1
     background: url(../img/egg1.jpg) no-repeat
-    background-size: cover 
+    background-size: contain   
   &--egg2 
     background: url(../img/egg2.jpg) no-repeat
-    background-size: cover
+    background-size: contain  
   &--egg3
     background: url(../img/egg3.jpg) no-repeat
-    background-size: cover
-  &--egg4
-    background: url(../img/egg4.jpg) no-repeat
-    background-size: cover 
+    background-size: contain   
 +comment("wooden style")  
 .header
   &--wooden
@@ -786,15 +783,12 @@ a
 .ic    
   &--wooden1
     background: url(../img/wooden1.jpg) no-repeat
-    background-size: cover 
+    background-size: contain 
   &--wooden2 
     background: url(../img/wooden2.jpg) no-repeat
-    background-size: cover
+    background-size: contain
   &--wooden3
     background: url(../img/wooden3.jpg) no-repeat
-    background-size: cover
-  &--wooden4
-    background: url(../img/wooden4.jpg) no-repeat
-    background-size: cover     
+    background-size: contain    
 .gallery
   text-align: center            
