@@ -1,0 +1,16 @@
+extends base/_layout.pug
+block variables
+  - var currPage = 'event'
+  +getPageContent(currPage)
+  - var title = page.h1
+block styles
+
+block scripts
+
+block content
+  include partials/_header-inside.pug
+  include partials/_product.pug
+block footer
+  include partials/_footer.pug
+block modals
+  include partials/_modals.pug
